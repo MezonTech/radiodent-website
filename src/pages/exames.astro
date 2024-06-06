@@ -1,0 +1,70 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout title="Exames - Radiodent Radiologia Odontológica">
+  
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+    input[type="checkbox"] {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Radiografias Dentárias</h1>
+    <img src="logo.png" alt="Logotipo">
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">Exames</a></li>
+      <li><a href="#">Planejamento de Implantes</a></li>
+      <li><a href="#">Ortodontia</a></li>
+      <li><a href="#">Periodontia</a></li>
+      <li><a href="#">Endodontia</a></li>
+    </ul>
+  </nav>
+  <table>
+    <tr>
+      <th colspan="2">Exames</th>
+    </tr>
+    <tr>
+      <th>Nome do Exame</th>
+      <th>Selecionar</th>
+    </tr>
+    <tr>
+      <td>Periapical isolado</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+      <td>Periapical completo</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+      <td>Interproximal</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+      <td>Oclusal ortogonal</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    </table>
+  <table>
+    </table>
+  <footer>
+    <p>&copy; 2024 - Sua Clínica Odontológica</p>
+  </footer>
+
+</Layout>
