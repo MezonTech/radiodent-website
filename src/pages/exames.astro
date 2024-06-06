@@ -1,70 +1,218 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Exames - Radiodent Radiologia Odontológica">
-  
-  <style>
-    table {
-      border-collapse: collapse;
-      width: 100%;
-    }
-    th, td {
-      padding: 8px;
-      text-align: left;
-      border: 1px solid #ddd;
-    }
-    th {
-      background-color: #f0f0f0;
-    }
-    input[type="checkbox"] {
-      margin: 0;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Radiografias Dentárias</h1>
-    <img src="logo.png" alt="Logotipo">
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#">Exames</a></li>
-      <li><a href="#">Planejamento de Implantes</a></li>
-      <li><a href="#">Ortodontia</a></li>
-      <li><a href="#">Periodontia</a></li>
-      <li><a href="#">Endodontia</a></li>
-    </ul>
-  </nav>
-  <table>
-    <tr>
-      <th colspan="2">Exames</th>
-    </tr>
-    <tr>
-      <th>Nome do Exame</th>
-      <th>Selecionar</th>
-    </tr>
-    <tr>
-      <td>Periapical isolado</td>
-      <td><input type="checkbox"></td>
-    </tr>
-    <tr>
-      <td>Periapical completo</td>
-      <td><input type="checkbox"></td>
-    </tr>
-    <tr>
-      <td>Interproximal</td>
-      <td><input type="checkbox"></td>
-    </tr>
-    <tr>
-      <td>Oclusal ortogonal</td>
-      <td><input type="checkbox"></td>
-    </tr>
-    </table>
-  <table>
-    </table>
-  <footer>
-    <p>&copy; 2024 - Sua Clínica Odontológica</p>
-  </footer>
+<Layout
+  title="Radiodent Radiologia Odontológica - Panorâmica - Tomografia - Radiografia - Madureira RJ"
+>
+  <main>
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-3 border px-3 py-3">
+          <h1 class="fs-5 fw-bold">RADIOGRAFIAS</h1>
+          <hr />
+          <ul class="list-unstyled">
+            <li>
+              <input
+                type="checkbox"
+                name=""
+                id=""
+                class="form-check-input me-2"
+              />
+              <b>Periapical isolado (marcar ao lado)</b>
+            </li>
+            <li class="pt-2">
+              <input
+                type="checkbox"
+                name=""
+                id=""
+                class="form-check-input me-2"
+              /><b>Periapical completo</b>
+              <div class="d-flex justify-content-start g-3 small">
+                <div>
+                  <input
+                    type="checkbox"
+                    name=""
+                    id=""
+                    class="form-check-input me-2"
+                  />Com grade
+                </div>
+              </div>
+            </li>
+            <li class="pt-2">
+              <div class="fs-6">
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="form-check-input me-2"
+                />
+                <b>Interproximal</b>
+              </div>
+              <div class="d-flex justify-content-start g-5 small">
+                <div>
+                  <input
+                    type="checkbox"
+                    name=""
+                    id=""
+                    class="form-check-input me-2"
+                  />Direita
+                </div>
+                <div class="ms-2">
+                  <input
+                    type="checkbox"
+                    name=""
+                    id=""
+                    class="form-check-input me-2"
+                  />
+                  Esquerda
+                </div>
+              </div>
+            </li>
+            <li class="pt-2">
+              <input
+                type="checkbox"
+                name=""
+                id=""
+                class="form-check-input me-2"
+              />
+              <b>Oclusal ortogonal</b>
+              <div class="d-flex justify-content-start g-5 small">
+                <div>
+                  <input
+                    type="checkbox"
+                    name=""
+                    id=""
+                    class="form-check-input me-2"
+                  />Superior
+                </div>
+                <div class="ms-2">
+                  <input
+                    type="checkbox"
+                    name=""
+                    id=""
+                    class="form-check-input me-2"
+                  />
+                  Inferior
+                </div>
+              </div>
+            </li>
+            <li class="pt-2">
+              <input
+                type="checkbox"
+                name=""
+                id=""
+                class="form-check-input me-2"
+              />
+              <b>Oclusal oblíqua</b>
+              <div class="d-flex justify-content-start g-5 small">
+                <div>
+                  <input
+                    type="checkbox"
+                    name=""
+                    id=""
+                    class="form-check-input me-2"
+                  />Superior
+                </div>
+                <div class="ms-2">
+                  <input
+                    type="checkbox"
+                    name=""
+                    id=""
+                    class="form-check-input me-2"
+                  />
+                  Inferior
+                </div>
+              </div>
+            </li>
+            <li class="pt-2">
+              <input
+                type="checkbox"
+                name=""
+                id=""
+                class="form-check-input me-2"
+              />
+              <b>Panorâmica simples</b>
+              <div class="d-flex justify-content-start g-5 small">
+                <div>
+                  <input
+                    type="checkbox"
+                    name=""
+                    id=""
+                    class="form-check-input me-2"
+                  />
+                  p/ implante -22%
+                </div>
+              </div>
+            </li>
+            <li class="pt-2">
+              <input
+                type="checkbox"
+                name=""
+                id=""
+                class="form-check-input me-2"
+              />
+              <b>Panorâmica com complementação</b>
+            </li>
+            <li class="pt-2">
+              <input
+                type="checkbox"
+                name=""
+                id=""
+                class="form-check-input me-2"
+              />
+              <b>Cefalométrica em perfil</b>
+              <div class="d-flex justify-content-start g-5 small">
+                <div>
+                  <input
+                    type="checkbox"
+                    name=""
+                    id=""
+                    class="form-check-input me-2"
+                  />
+                  em P.A
+                </div>
+              </div>
+            </li>
+            <li class="pt-2">
+              <div class="fs-6">
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="form-check-input me-2"
+                />
+                <b>Cefalométrica a 45°</b>
+              </div>
+              <div class="d-flex justify-content-start g-5 small">
+                <div>
+                  <input
+                    type="checkbox"
+                    name=""
+                    id=""
+                    class="form-check-input me-2"
+                  />Direita
+                </div>
+                <div class="ms-2">
+                  <input
+                    type="checkbox"
+                    name=""
+                    id=""
+                    class="form-check-input me-2"
+                  />
+                  Esquerda
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
 
+        <div class="col-3"></div>
+
+        <div class="col-3"></div>
+
+        <div class="col-3"></div>
+      </div>
+    </div>
+  </main>
 </Layout>
