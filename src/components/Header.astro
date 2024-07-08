@@ -22,41 +22,33 @@ import astroConfig from "../../astro.config.mjs";
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href={astroConfig.site}
-            >Home</a
-          >
+            >Home
+            </a>
         </li>
 
-        <li class="nav-item dropdown">
+        <li class="nav-item">
           <a
-            class="nav-link dropdown-toggle"
-            href="#"
+            class="nav-link"
+            href={astroConfig.site+"/servicos"}
             role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
           >
             Serviços
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+          </a>          
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Convênios</a>
+          <a class="nav-link" href={astroConfig.site + "/convenios"}>Convênios</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href={astroConfig.site + "/exames"}>Exames</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Baixar</a>
+          <a class="nav-link" href={astroConfig.site + "/download"}>Baixar</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href={astroConfig.site + "/sobre"}>Quem somos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contato</a>
+          <a class="nav-link" href={astroConfig.site + "/contato"}>Contato</a>
         </li>
       </ul>
     </div>
