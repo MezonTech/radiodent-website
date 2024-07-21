@@ -5,6 +5,7 @@ interface Props {
 
 const { title } = Astro.props;
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 ---
@@ -31,11 +32,35 @@ import Footer from "../components/Footer.astro";
   </script>
 </html>
 
-
 <style is:global>
-
   .bg-custom {
     background: #031633;
-    background: linear-gradient(90deg, rgba(3, 22, 51, 1) 0%, rgba(11,47,86,0.95) 56%, rgba(11,47,86,0.9) 100%);
+    background: linear-gradient(
+      90deg,
+      rgba(3, 22, 51, 1) 0%,
+      rgba(11, 47, 86, 0.95) 56%,
+      rgba(11, 47, 86, 0.9) 100%
+    );
+  }
+
+  .instagram-color {
+    background: -webkit-linear-gradient(
+      45deg,
+      #f58529,
+      #dd2a7b,
+      #8134af,
+      #515bd4
+    );
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .facebook-color {
+    color: #1877f2;
+  }
+
+  .linkedin-color {
+    color: #0a66c2;
   }
 </style>

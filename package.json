@@ -5,14 +5,15 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
+    "start-host": "astro dev --host",
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.7.0",
+    "@astrojs/check": "^0.8.2",
     "@swup/astro": "^1.4.1",
-    "astro": "^4.8.6",
+    "astro": "^4.12.2",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "typescript": "^5.4.5"
