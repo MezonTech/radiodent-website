@@ -9,7 +9,18 @@ import Layout from "../layouts/Layout.astro";
   <main>
     <Carousel />
 
-    <div class="row">
+    <section class="py-5 bg-light row">
+      <div class="col-md-3">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Radiodent</h1>
+        <h2 class="fs-5 mb-3">Radiologia Odontológica</h2>
+        <p class="lead">
+          A Radiodent e um consultório odontológico de especialização, com os
+          melhores profissionais da região RJ.
+        </p>
+      </div>
+    </section>
+
+    <section class="row">
       <div class="col-md-12 whatsapp-bg py-5 px-5">
         <div class="container">
           <h2 class="text-white">Fale Conosco pelo WhatsApp!</h2>
@@ -17,9 +28,12 @@ import Layout from "../layouts/Layout.astro";
             Entre em contato de forma ágil e obtenha respostas às suas dúvidas.
             Estamos prontos para ajudar.
           </p>
+          <button class="btn btn-lg btn-success">
+            <i class="bi bi-whatsapp me-2"></i>Entrar em Contato</button
+          >
         </div>
       </div>
-    </div>
+    </section>
   </main>
 </Layout>
 
@@ -29,6 +43,6 @@ import Layout from "../layouts/Layout.astro";
     background-image: url("images/whatsapp-background.png");
     background-repeat: no-repeat;
     background-position: right center;
-    background-size: 30%;
+    background-size: 35%;
   }
 </style>
