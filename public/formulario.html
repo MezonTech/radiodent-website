@@ -7,14 +7,24 @@
       * {
         margin: 0;
         padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
         box-sizing: border-box;
-        font-size: 1rem;
+        color: #102b3f;
+        font-size: 0.875rem;
       }
 
       h2 {
-        margin-top: 20px;
+        margin-top: 16px;
+        margin-bottom: 16px;
         font-size: 1.2rem;
       }
+
+      h3 {
+        margin-top: 4px;
+        margin-bottom: 8px;
+        font-size: 1rem;
+      }
+
       ul {
         list-style-type: none;
         padding: 0;
@@ -27,7 +37,7 @@
       input[type="checkbox"] {
         margin-right: 5px;
       }
-      /* Estilos para o esquema de marcação dos dentes */
+
       .dente {
         width: 30px;
         height: 30px;
@@ -40,79 +50,111 @@
       table {
         width: 100%;
         max-width: 100%;
-        border: 1px solid black;
+        border: 1px solid #ccc;
         border-collapse: collapse;
-        margin-top: 20px;
+      }
+
+      thead {
+        background-color: #f8f8f8;
+      }
+
+      th {
+        padding: 16px;
+        text-align: left;
+        border: 1px solid #ccc;
       }
 
       td {
         padding: 8px;
         vertical-align: top;
-        border: 1px solid black;
+        border: 1px solid #ccc;
       }
 
       body {
         width: 100%;
         max-width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
         margin: 0;
-        font-size: 16px;
         padding: 12px;
+        font-size: 16px;
+        max-height: 100vh;
+      }
+
+      textarea {
+        width: 100%;
+        height: 100px;
+        padding: 4px 8px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none;
+      }
+      .flex-between {
+        display: flex;
+        justify-content: space-between;
       }
     </style>
   </head>
   <body>
     <table>
+      <thead>
+        <th colspan="4">
+          <div></div>
+          Formulário de Solicitação de Exames Odontológicos
+        </th>
+      </thead>
       <tr>
         <td>
           <h2>RADIOGRAFIAS</h2>
           <ul>
-            <li><input type="checkbox" /> Periapical completo com grade</li>
             <li>
-              <input type="checkbox" /> Interproximal
+              <input type="checkbox" /> Periapical isolado (marcar ao lado)
+            </li>
+            <li><input type="checkbox" /> Periapical completo</li>
+            <li><input type="checkbox" /> com grade</li>
+            <li class="flex-between">
+              <span><input type="checkbox" />Interproximal</span>
               <label
                 ><input
-                  type="radio"
+                  type="checkbox"
                   name="interproximal"
                   value="direita"
                 />direita</label
               >
-              <label
-                ><input
-                  type="radio"
-                  name="interproximal"
-                  value="esquerda"
-                />esquerda</label
-              >
+              <label><input type="checkbox" value="esquerda" />esquerda</label>
             </li>
-            <li>
-              <input type="checkbox" /> Oclusal ortogonal
+            <li class="flex-between">
+              <span><input type="checkbox" />Oclusal ortogonal</span>
               <label
                 ><input
-                  type="radio"
+                  type="checkbox"
                   name="oclusal_ortogonal"
                   value="superior"
                 />sup.</label
               >
               <label
                 ><input
-                  type="radio"
+                  type="checkbox"
                   name="oclusal_ortogonal"
                   value="inferior"
                 />inf.</label
               >
             </li>
-            <li>
-              <input type="checkbox" /> Oclusal oblíqua
+            <li class="flex-between">
+              <span><input type="checkbox" />Oclusal oblíqua</span>
               <label
                 ><input
-                  type="radio"
+                  type="checkbox"
                   name="oclusal_obliqua"
                   value="superior"
                 />sup.</label
               >
               <label
                 ><input
-                  type="radio"
+                  type="checkbox"
                   name="oclusal_obliqua"
                   value="inferior"
                 />inf.</label
@@ -127,14 +169,14 @@
               <input type="checkbox" /> Cefalométrica a 45°
               <label
                 ><input
-                  type="radio"
+                  type="checkbox"
                   name="cefalometrica_45"
                   value="direita"
                 />dir.</label
               >
               <label
                 ><input
-                  type="radio"
+                  type="checkbox"
                   name="cefalometrica_45"
                   value="esquerda"
                 />esq.</label
@@ -147,7 +189,7 @@
 
           <h2>ANÁLISES COMPUTADORIZADAS</h2>
 
-          <h3>Cefalométrica em perfil</h3>
+          <h3 style="font-style: italic">Cefalométrica em perfil</h3>
           <ul>
             <li><input type="checkbox" /> Análise de adenóides</li>
             <li><input type="checkbox" /> Bimler</li>
@@ -284,17 +326,13 @@
           </ul>
         </td>
         <td>
-          <h2>Formato de entrega do exame:</h2>
-          <ul>
-            <li><input type="checkbox" /> Filme</li>
-            <li><input type="checkbox" /> Papel fotográfico</li>
-            <li><input type="checkbox" /> CD Implant viewer</li>
-          </ul>
-
           <h2>CIRURGIA</h2>
           <ul>
             <li><input type="checkbox" /> Dente incluso e/ou supranumerário</li>
-            <li><input type="checkbox" /> Pesquisa de fratura óssea região:</li>
+            <li>
+              <input type="checkbox" /> Pesquisa de fratura óssea região:
+              ________________
+            </li>
             <li>
               <input type="checkbox" /> Terceiros molares:
               <ul>
@@ -315,14 +353,34 @@
               <input type="checkbox" /> Avaliação da intercuspidação dentária
             </li>
             <li>
-              <input type="checkbox" /> Medição dos diâmetros mesio-distais de
-              caninos e prémolares
+              <input type="checkbox" /> Medição dos diâmetros mesiodistal de
+              caninos e pré-molares
             </li>
           </ul>
 
-          <p>Carimbo e assinatura</p>
+          <h2>Formato de entrega do exame:</h2>
+          <ul>
+            <li><input type="checkbox" /> Filme</li>
+            <li><input type="checkbox" /> Papel fotográfico</li>
+            <li><input type="checkbox" /> CD Implant viewer</li>
+          </ul>
+
+          <div style="margin-top: 150px; text-align: center">
+            <hr />
+            <p style="font-weight: bold; margin-top: 10px">
+              Carimbo e assinatura
+            </p>
+          </div>
         </td>
       </tr>
+      <tfoot>
+        <tr>
+          <td colspan="4">
+            <input type="submit" value="ENVIAR" />
+            <input type="reset" value="LIMPAR" />
+          </td>
+        </tr>
+      </tfoot>
     </table>
   </body>
 </html>
