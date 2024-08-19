@@ -4,6 +4,36 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Página não encontrada - Radiodent Radiologia Odontológica">
   <main class="container">
-    <h1 class="text-center">Página não encontrada</h1>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="error-code">404</div>
+        <div class="error-message">Oops! Página não encontrada.</div>
+        <a href="/" class="btn btn-custom">Voltar para a Home</a>
+      </div>
+    </div>
   </main>
 </Layout>
+
+<style>
+  .error-code {
+    font-size: 100px;
+    font-weight: bold;
+    color: #;
+  }
+  .error-message {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .btn-custom {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .btn-custom:hover {
+    background-color: #c82333;
+  }
+</style>
