@@ -33,6 +33,18 @@ import Footer from "../components/Footer.astro";
 </html>
 
 <style is:global>
+ @import "functions"; 
+  @import "variables";
+
+$primary: $orange; // set the $primary variable
+
+
+$theme-colors: map-merge($theme-colors, (
+  "primary": $primary
+));
+
+@import "bootstrap";
+  
   .bg-custom {
     background: #031633;
     background: linear-gradient(
@@ -43,24 +55,5 @@ import Footer from "../components/Footer.astro";
     );
   }
 
-  .instagram-color {
-    background: -webkit-linear-gradient(
-      45deg,
-      #f58529,
-      #dd2a7b,
-      #8134af,
-      #515bd4
-    );
-    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .facebook-color {
-    color: #1877f2;
-  }
-
-  .linkedin-color {
-    color: #0a66c2;
-  }
+  
 </style>
