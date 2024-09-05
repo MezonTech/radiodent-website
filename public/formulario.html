@@ -28,6 +28,8 @@
       ul {
         list-style-type: none;
         padding: 0;
+        display: flex;
+        flex-direction: column;
       }
       li {
         display: flex;
@@ -107,7 +109,7 @@
         </th>
       </thead>
       <tr>
-        <td>
+        <td style="width: 25%">
           <h2>RADIOGRAFIAS</h2>
           <ul>
             <li>
@@ -225,11 +227,11 @@
             <li><input type="checkbox" /> Bolton</li>
           </ul>
         </td>
-        <td>
+        <td style="width: 25%">
           <img
             src="images/odontograma-permanentes-768x370.jpeg"
-            alt=""
-            width="350px"
+            style="scale: 1.05"
+            width="100%"
           />
           <h2>OBSERVAÇÕES</h2>
           <textarea rows="4" cols="50"></textarea>
@@ -263,7 +265,7 @@
             <li><input type="checkbox" /> Perfil esquerdo sorrindo</li>
           </ul>
         </td>
-        <td>
+        <td style="width: 25%">
           <h2>TOMOGRAFIA COMPUTADORIZADA CONE BEAM</h2>
           <label for="tc-obs"
             >Finalidade do exame, histórico clínico e observações
@@ -330,7 +332,7 @@
             <li><input type="checkbox" /> Pesquisa de perfuração radicular</li>
           </ul>
         </td>
-        <td>
+        <td style="width: 25%">
           <h2>CIRURGIA</h2>
           <ul>
             <li><input type="checkbox" /> Dente incluso e/ou supranumerário</li>
@@ -362,6 +364,12 @@
               caninos e pré-molares
             </li>
           </ul>
+
+          <h2 style="display: block; margin-top: 20px; margin-bottom: 0px">
+            Marcar regiões especificas no esquema abaixo
+          </h2>
+
+          <img src="images/desenho-esquematico.png" width="350px" />
 
           <h2>Formato de entrega do exame:</h2>
           <ul>
