@@ -7,21 +7,17 @@ import Layout from "../layouts/Layout.astro";
   title="Radiodent Radiologia Odontológica - Panorâmica - Tomografia - Radiografia - Madureira RJ"
 >
   <main>
-    <section class="row d-flex justify-content-center px-0">
-      <div class="col-md-12">
-        <Carousel />
-      </div>
-    </section>
+    <Carousel />
 
     <section class="py-4 bg-light row justify-content-center gap-2">
       <div
-        class="card col-3 bg-primary text-white text-center border-0 px-4 py-3"
+        class="card col-sm-12 col-md-3 bg-primary text-white text-center border-0 px-4 py-3"
       >
         <div
           class="card-body d-flex justify-content-center align-items-center flex-column"
         >
           <div
-            class="p-4 text-light rounded-circle bg-light custom-home-circle-icon mb-3"
+            class="p-5 text-light rounded-circle bg-light custom-home-circle-icon mb-3"
           >
             <i class="bi bi-hospital display-5"></i>
           </div>
@@ -30,13 +26,13 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
       <div
-        class="card col-3 bg-warning text-white text-center border-0 px-4 py-3"
+        class="card col-sm-12 col-md-3 bg-warning text-white text-center border-0 px-4 py-3"
       >
         <div
           class="card-body d-flex justify-content-center align-items-center flex-column"
         >
           <div
-            class="p-4 text-light rounded-circle bg-light custom-home-circle-icon mb-3"
+            class="p-5 text-light rounded-circle bg-light custom-home-circle-icon mb-3"
           >
             <i class="bi bi-person-check display-5"></i>
           </div>
@@ -45,13 +41,13 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
       <div
-        class="card col-3 bg-primary text-white text-center border-0 px-4 py-3"
+        class="card col-sm-12 col-md-3 bg-primary text-white text-center border-0 px-4 py-3"
       >
         <div
           class="card-body d-flex justify-content-center align-items-center flex-column"
         >
           <div
-            class="p-4 text-light rounded-circle bg-light custom-home-circle-icon mb-3"
+            class="p-5 text-light rounded-circle bg-light custom-home-circle-icon mb-3"
           >
             <i class="bi bi-journal-check display-5"></i>
           </div>
@@ -93,5 +89,11 @@ import Layout from "../layouts/Layout.astro";
 
   .custom-border-slide {
     border-bottom: 16px solid #1db954;
+  }
+
+  .pool-carousel-inner {
+    overflow-x: hidden;
+    overflow-y: auto;
+    touch-action: pan-y pinch-zoom; // Have to re-set this little hidden gem that bootstrap hides in .pointer-event or swiping breaks
   }
 </style>
