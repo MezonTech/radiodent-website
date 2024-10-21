@@ -33,18 +33,12 @@ import Footer from "../components/Footer.astro";
 </html>
 
 <style is:global>
- @import "functions"; 
-  @import "variables";
-
-$primary: $orange; // set the $primary variable
-
-
-$theme-colors: map-merge($theme-colors, (
-  "primary": $primary
-));
-
-@import "bootstrap";
-  
+  * {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   .bg-custom {
     background: #031633;
     background: linear-gradient(
@@ -54,6 +48,4 @@ $theme-colors: map-merge($theme-colors, (
       rgba(11, 47, 86, 0.9) 100%
     );
   }
-
-  
 </style>
