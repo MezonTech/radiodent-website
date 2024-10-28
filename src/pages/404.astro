@@ -1,14 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import image from "/public/images/404.svg";
 ---
 
 <Layout title="Página não encontrada - Radiodent Radiologia Odontológica">
   <main class="container">
     <div class="row justify-content-center py-5">
       <div class="col-md-12 text-center">
-        <div class="error-code">404</div>
-        <div class="error-message">Oops! Página não encontrada.</div>
-        <a href="/" class="btn btn-link">Voltar para a Home</a>
+        <Image src={image} alt="Página não encontrada" width={450} />
+        <div class="error-message">Página não encontrada.</div>
+        <a href="/" class="btn btn-link">Voltar para página inicial</a>
       </div>
     </div>
   </main>
@@ -18,11 +20,10 @@ import Layout from "../layouts/Layout.astro";
   .error-code {
     font-size: 100px;
     font-weight: bold;
-    color: #;
   }
   .error-message {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin: 20px auto;
   }
   .btn-custom {
     background-color: #dc3545;
