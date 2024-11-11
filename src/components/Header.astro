@@ -19,19 +19,21 @@ import astroConfig from "../../astro.config.mjs";
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav ms-auto d-flex gap-8">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href={astroConfig.site}
             >Home
-            </a>
+          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href={astroConfig.site + "/exames"}>Exames</a>
-        </li>        
-        <li class="nav-item">
-          <a class="nav-link" href={astroConfig.site + "/convenios"}>Convênios</a>
         </li>
-        
+        <li class="nav-item">
+          <a class="nav-link" href={astroConfig.site + "/convenios"}
+            >Convênios</a
+          >
+        </li>
+
         <li class="nav-item">
           <a class="nav-link" href={astroConfig.site + "/download"}>Baixar</a>
         </li>
