@@ -3,19 +3,59 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Sobre nós - Radiodent Radiologia Odontológica">
-  <main id="about">
+  <main id="about" class="bg-light py-5">
     <div class="container my-5 transition-slide">
       <div class="row">
         <div class="col-md-5">
-          <img
-            src="/images/logo-raw-removebg-preview.png"
-            alt="Imagem Radiodent"
-            class="img-responsive img-thumbnail"
-          />
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="/images/logo-raw-removebg-preview.png"
+                  alt="Imagem Radiodent"
+                  class="img-responsive img-thumbnail"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/images/logo-raw-removebg-preview.png"
+                  alt="Imagem Radiodent"
+                  class="img-responsive img-thumbnail"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/images/logo-raw-removebg-preview.png"
+                  alt="Imagem Radiodent"
+                  class="img-responsive img-thumbnail"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
 
         <div class="col-md-7">
-          <h2 class="text-primary">Nossa Visão</h2>
+          <h4 class="text-primary">Nossa Visão</h4>
           <p>
             Queremos ser o ponto de confiança e referência para todos que buscam
             precisão e cuidado em diagnósticos odontológicos. Mais do que
@@ -24,7 +64,7 @@ import Layout from "../layouts/Layout.astro";
             atual e eficiente para cada necessidade.
           </p>
 
-          <h2 class="text-primary">Nossa Missão</h2>
+          <h4 class="text-primary">Nossa Missão</h4>
           <p>
             Nossa missão é clara: proporcionar um atendimento humanizado e de
             qualidade, com foco em diagnósticos precisos e personalizados.
@@ -34,7 +74,7 @@ import Layout from "../layouts/Layout.astro";
             para entregar o que há de melhor na saúde bucal.
           </p>
 
-          <h2 class="text-primary">Nossos Valores</h2>
+          <h4 class="text-primary">Nossos Valores</h4>
           <ul>
             <li>
               <strong>Excelência com Simplicidade</strong>: Valorizamos a
