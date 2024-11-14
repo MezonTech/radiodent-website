@@ -1,10 +1,11 @@
 import { defineConfig } from "astro/config";
 import swup from "@swup/astro";
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://github.com/MezonTech",
-  // site: "http://localhost:4321",
+  // site: "https://github.com/MezonTech",
+  site: "http://localhost:4321",
   base: "/radiodent-website",
   integrations: [
     swup({
