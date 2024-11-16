@@ -8,6 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import Whatsapp from "../components/Whatsapp.astro";
 ---
 
 <!doctype html>
@@ -26,6 +27,7 @@ import Footer from "../components/Footer.astro";
     <Header />
     <slot />
     <Footer />
+    <Whatsapp />
   </body>
   <script>
     import "bootstrap/dist/js/bootstrap.bundle.min.js";
@@ -48,6 +50,17 @@ import Footer from "../components/Footer.astro";
       rgba(11, 47, 86, 0.95) 56%,
       rgba(11, 47, 86, 0.9) 100%
     );
+  }
+
+  .btn-whatsapp {
+    background-color: #25d366;
+    color: #fff;
+  }
+  .btn-whatsapp:hover {
+    background-color: #1db954;
+    color: #fff;
+    box-shadow: 1px 1px 1px #232332;
+    transition: all 0.5s ease-in-out;
   }
 
   :root {

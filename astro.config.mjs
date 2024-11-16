@@ -1,11 +1,18 @@
-import { defineConfig } from 'astro/config';
-import swup from '@swup/astro';
+import { defineConfig } from "astro/config";
+import swup from "@swup/astro";
+import sitemap from "@astrojs/sitemap";
+
+import robotsTxt from "astro-robots-txt";
 
 // https://astro.build/config
 export default defineConfig({
+  // site: "https://github.com/MezonTech",
   site: "http://localhost:4321",
+  // base: "/radiodent-website",
   base: "/",
   integrations: [
+    robotsTxt(),
+    sitemap(),
     swup({
       theme: "slide",
       animationClass: "transition-",
