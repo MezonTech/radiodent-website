@@ -2,11 +2,11 @@
 import astroConfig from "../../astro.config.mjs";
 ---
 
-<div class="container-fluid bg-body-tertiary">
+<div class="container-fluid bg-light">
   <div class="container">
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg py-4">
       <a class="navbar-brand" href={astroConfig.site}>
-        <img src="images/logo.jpg" alt="Logo Radiodent" />
+        <img src="images/logo.png" alt="Logo Radiodent" width="350" />
       </a>
       <button
         class="navbar-toggler"
@@ -26,7 +26,12 @@ import astroConfig from "../../astro.config.mjs";
         aria-labelledby="offcanvasRightLabel"
       >
         <div class="offcanvas-header">
-          <img src="images/logo.jpg" class="w-75" alt="Logo Radiodent" />
+          <img
+            src="images/logo.jpg"
+            class="w-75"
+            style="mix-blend-mode: multiply;"
+            alt="Logo Radiodent"
+          />
           <button
             type="button"
             class="btn-close"
@@ -44,7 +49,9 @@ import astroConfig from "../../astro.config.mjs";
                 data-bs-dismiss="offcanvas"
                 href={astroConfig.site}
               >
-                <i class="bi bi-house-door-fill me-2"></i> Home
+                <i
+                  class="bi bi-house-door-fill me-2 d-none d-sm-block d-md-none"
+                ></i> Home
               </a>
             </li>
             <li class="nav-item">
@@ -53,7 +60,9 @@ import astroConfig from "../../astro.config.mjs";
                 data-bs-dismiss="offcanvas"
                 href={astroConfig.site + "/exames"}
               >
-                <i class="bi bi-clipboard-check-fill me-2"></i> Exames</a
+                <i
+                  class="bi bi-clipboard-check-fill me-2 d-none d-sm-block d-md-none"
+                ></i> Exames</a
               >
             </li>
             <li class="nav-item">
@@ -62,7 +71,8 @@ import astroConfig from "../../astro.config.mjs";
                 data-bs-dismiss="offcanvas"
                 href={astroConfig.site + "/convenios"}
               >
-                <i class="bi bi-people-fill me-2"></i>
+                <i class="bi bi-people-fill me-2 d-none d-sm-block d-md-none"
+                ></i>
                 Convênios</a
               >
             </li>
@@ -73,7 +83,7 @@ import astroConfig from "../../astro.config.mjs";
                 data-bs-dismiss="offcanvas"
                 href={astroConfig.site + "/download"}
               >
-                <i class="bi bi-download me-2"></i>
+                <i class="bi bi-download me-2 d-none d-sm-block d-md-none"></i>
                 Requisição</a
               >
             </li>
@@ -83,7 +93,9 @@ import astroConfig from "../../astro.config.mjs";
                 data-bs-dismiss="offcanvas"
                 href={astroConfig.site + "/sobre"}
               >
-                <i class="bi bi-info-circle-fill me-2"></i> Quem somos</a
+                <i
+                  class="bi bi-info-circle-fill me-2 d-none d-sm-block d-md-none"
+                ></i> Quem somos</a
               >
             </li>
             <li class="nav-item">
@@ -92,7 +104,8 @@ import astroConfig from "../../astro.config.mjs";
                 data-bs-dismiss="offcanvas"
                 href={astroConfig.site + "/contato"}
               >
-                <i class="bi bi-envelope-fill me-2"></i> Contato</a
+                <i class="bi bi-envelope-fill me-2 d-none d-sm-block d-md-none"
+                ></i> Contato</a
               >
             </li>
           </ul>
@@ -101,3 +114,15 @@ import astroConfig from "../../astro.config.mjs";
     </nav>
   </div>
 </div>
+
+<style>
+  nav ul li a {
+    color: #005697;
+    font-size: 1.1rem;
+  }
+
+  nav ul li a:hover {
+    color: #005697;
+    opacity: 0.8;
+  }
+</style>

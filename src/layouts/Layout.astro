@@ -42,14 +42,9 @@ import Whatsapp from "../components/Whatsapp.astro";
     padding: 0;
     box-sizing: border-box;
   }
-  .bg-custom {
-    background: #031633;
-    background: linear-gradient(
-      90deg,
-      rgba(3, 22, 51, 1) 0%,
-      rgba(11, 47, 86, 0.95) 56%,
-      rgba(11, 47, 86, 0.9) 100%
-    );
+
+  .main-color {
+    color: #005697 !important;
   }
 
   .btn-whatsapp {
@@ -61,45 +56,5 @@ import Whatsapp from "../components/Whatsapp.astro";
     color: #fff;
     box-shadow: 1px 1px 1px #232332;
     transition: all 0.5s ease-in-out;
-  }
-
-  :root {
-    --astro-gradient: linear-gradient(0deg, #031633, #0b2f56, #0b2f56);
-    --color-brand: #031633;
-
-    --color-base-100: #f8f9fa;
-    --color-base-200: #e9ecef;
-    --color-base-300: #dee2e6;
-    --color-base-400: #ced4da;
-    --color-base-500: #adb5bd;
-    --color-base-600: #6c757d;
-    --color-base-700: #495057;
-    --color-base-800: #343a40;
-    --color-base-900: #212529;
-
-    --color-primary: #4f39fa;
-    --color-primary-50: #e9e8ff;
-    --color-primary-100: #d6d3ff;
-    --color-primary-200: #b5aefd;
-
-    --color-secondary: #6c757d;
-    --color-secondary-50: #e9ecef;
-    --color-secondary-100: #dee2e6;
-    --color-secondary-200: #ced4da;
-
-    --color-success: #198754;
-    --color-success-50: #d1e7dd;
-    --color-success-100: #bce8cf;
-    --color-success-200: #a3d7a5;
-
-    --color-warning: #ffc107;
-    --color-warning-50: #fff3cd;
-    --color-warning-100: #ffe69c;
-    --color-warning-200: #ffda6a;
-
-    --color-danger: #dc3545;
-    --color-danger-50: #f8d7da;
-    --color-danger-100: #f1b0b7;
-    --color-danger-200: #ea868f;
   }
 </style>
