@@ -1,10 +1,11 @@
 {
-  "servicos": {
-    "radiografiasDentarias": {
-      "titulo": "Radiografias Dentárias",
+  "servicos": [
+    {
+      "icone": "bi-file-medical",
+      "categoria": "Radiografias Dentárias",
       "descricao": "<p>As radiografias dentárias ajudam a identificar problemas invisíveis a olho nu e são essenciais para diagnósticos e planejamento de tratamentos. Confira os diferentes tipos:</p>",
-      "tipos": {
-        "intraOrais": {
+      "tipos": [
+        {
           "titulo": "Intra-orais",
           "opcoes": [
             {
@@ -29,7 +30,7 @@
             }
           ]
         },
-        "extraOrais": {
+        {
           "titulo": "Extra-orais",
           "opcoes": [
             {
@@ -55,76 +56,93 @@
             }
           ]
         }
-      }
+      ]
     },
-    "analisesCefalometricas": {
-      "titulo": "Análises Cefalométricas",
+    {
+      "icone": "bi-graph-up-arrow",
+      "categoria": "Análises Cefalométricas",
       "descricao": "<p>Essas análises permitem que o ortodontista planeje o melhor tratamento, usando técnicas específicas para cada caso.</p>",
-      "analisesPrincipais": [
+      "tipos": [
         {
-          "nome": "Cefalométrica em perfil",
-          "descricao": "<p class='mb-0'>Radiografia usada para avaliação ortodôntica.</p>"
-        }
-      ],
-      "outrasAnalises": [
-        {
-          "nome": "Análise de adenoides",
-          "descricao": "<p class='mb-0'>Avaliação das vias aéreas superiores.</p>"
+          "titulo": "Análises Principais",
+          "opcoes": [
+            {
+              "nome": "Cefalométrica em perfil",
+              "descricao": "<p class='mb-0'>Radiografia usada para avaliação ortodôntica.</p>"
+            }
+          ]
         },
         {
-          "nome": "Bimler",
-          "descricao": "<p class='mb-0'>Método de estudo para oclusão e alinhamento.</p>"
-        },
-        {
-          "nome": "Delmanto",
-          "descricao": "<p class='mb-0'>Análise específica para diagnóstico ortodôntico.</p>"
-        },
-        {
-          "nome": "Downs",
-          "descricao": "<p class='mb-0'>Análise com foco em crescimento facial e posição dos dentes.</p>"
-        },
-        {
-          "nome": "Jarabak",
-          "descricao": "<p class='mb-0'>Avaliação da estrutura facial e padrão de crescimento.</p>"
+          "titulo": "Outras Análises",
+          "opcoes": [
+            {
+              "nome": "Análise de adenoides",
+              "descricao": "<p class='mb-0'>Avaliação das vias aéreas superiores.</p>"
+            },
+            {
+              "nome": "Bimler",
+              "descricao": "<p class='mb-0'>Método de estudo para oclusão e alinhamento.</p>"
+            },
+            {
+              "nome": "Delmanto",
+              "descricao": "<p class='mb-0'>Análise específica para diagnóstico ortodôntico.</p>"
+            },
+            {
+              "nome": "Downs",
+              "descricao": "<p class='mb-0'>Análise com foco em crescimento facial e posição dos dentes.</p>"
+            },
+            {
+              "nome": "Jarabak",
+              "descricao": "<p class='mb-0'>Avaliação da estrutura facial e padrão de crescimento.</p>"
+            }
+          ]
         }
       ]
     },
-    "fotografiasDentarias": {
-      "titulo": "Fotografias Dentárias",
+    {
+      "icone": "bi-camera",
+      "categoria": "Fotografias Dentárias",
       "descricao": "<p>As fotografias dentárias permitem ao ortodontista acompanhar o progresso e planejar ajustes ao longo do tratamento.</p>",
-      "tipos": {
-        "intraOrais": [
-          {
-            "nome": "Oclusão",
-            "descricao": "<p class='mb-0'>Mostra a mordida e o alinhamento dos dentes.</p>"
-          },
-          {
-            "nome": "Oclusal",
-            "descricao": "<p class='mb-0'>Vista superior ou inferior completa dos dentes.</p>"
-          },
-          {
-            "nome": "Overjet",
-            "descricao": "<p class='mb-0'>Mede a projeção dos dentes superiores.</p>"
-          },
-          {
-            "nome": "Overbite",
-            "descricao": "<p class='mb-0'>Avalia a sobreposição dos dentes superiores.</p>"
-          }
-        ],
-        "extraOrais": [
-          {
-            "nome": "Frente",
-            "descricao": "<p class='mb-0'>Fotografia da face de frente.</p>"
-          },
-          {
-            "nome": "Perfil",
-            "descricao": "<p class='mb-0'>Fotografia da face de perfil, útil para análise facial.</p>"
-          }
-        ]
-      }
+      "tipos": [
+        {
+          "titulo": "Intra-orais",
+          "opcoes": [
+            {
+              "nome": "Oclusão",
+              "descricao": "<p class='mb-0'>Mostra a mordida e o alinhamento dos dentes.</p>"
+            },
+            {
+              "nome": "Oclusal",
+              "descricao": "<p class='mb-0'>Vista superior ou inferior completa dos dentes.</p>"
+            },
+            {
+              "nome": "Overjet",
+              "descricao": "<p class='mb-0'>Mede a projeção dos dentes superiores.</p>"
+            },
+            {
+              "nome": "Overbite",
+              "descricao": "<p class='mb-0'>Avalia a sobreposição dos dentes superiores.</p>"
+            }
+          ]
+        },
+        {
+          "titulo": "Extra-orais",
+          "opcoes": [
+            {
+              "nome": "Frente",
+              "descricao": "<p class='mb-0'>Fotografia da face de frente.</p>"
+            },
+            {
+              "nome": "Perfil",
+              "descricao": "<p class='mb-0'>Fotografia da face de perfil, útil para análise facial.</p>"
+            }
+          ]
+        }
+      ]
     },
-    "modelosEmGesso": {
-      "titulo": "Modelos em Gesso",
+    {
+      "icone": "bi-layers",
+      "categoria": "Modelos em Gesso",
       "descricao": "<p>Modelos em gesso são criados para observar os dentes e planejamento em 3D, tanto para estudo quanto para trabalho.</p>",
       "tipos": [
         {
@@ -137,8 +155,9 @@
         }
       ]
     },
-    "tomografiasDentarias": {
-      "titulo": "Tomografias Dentárias",
+    {
+      "icone": "bi-cpu",
+      "categoria": "Tomografias Dentárias",
       "descricao": "<p>As tomografias oferecem imagens tridimensionais detalhadas para planejamento cirúrgico e diagnóstico preciso.</p>",
       "tipos": [
         {
@@ -147,5 +166,5 @@
         }
       ]
     }
-  }
+  ]
 }

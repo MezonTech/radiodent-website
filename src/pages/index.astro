@@ -1,104 +1,64 @@
 ---
-import Carousel from "../components/Carousel.astro";
 import Layout from "../layouts/Layout.astro";
+import radiodentImage from "../../public/images/entrada-clinica.jpeg";
+import Image from "astro/components/Image.astro";
+import Exames from "../components/Exames.astro";
+
+const yearsSinc = new Date().getFullYear() - 2000 + 1;
 ---
 
 <Layout
   title="Radiodent Radiologia Odontológica - Panorâmica - Tomografia - Radiografia - Madureira RJ"
 >
-  <main class="container-fluid px-0">
+  <section class="container-fluid px-0">
     <div
-      class="px-4 py-5 text-center hero-image d-flex flex-column justify-content-center align-items-center"
+      class="px-4 py-5 text-right hero-image d-flex flex-column justify-content-center align-items-end"
     >
-      <h1 class="display-5 fw-bold main-color">Bem vindo a Radiodent</h1>
-      <div class="col-lg-6 mx-auto">
+      <div class="col-lg-6 text-left">
+        <h1 class="display-5 fw-bold main-color">Bem vindo a Radiodent</h1>
         <p class="lead mb-4">
-          Há 24 anos, a Radiodent tem sido um ponto de referência em Madureira,
-          oferecendo serviços odontológicos de alta qualidade e excelência.
-          Nossa equipe altamente qualificada está comprometida em proporcionar o
-          melhor atendimento aos nossos pacientes.
+          Há {yearsSinc} anos, a Radiodent tem sido um ponto de referência em Madureira,
+          oferecendo serviços odontológicos de alta qualidade e excelência. Nossa
+          equipe altamente qualificada está comprometida em proporcionar o melhor
+          atendimento aos nossos pacientes.
         </p>
       </div>
     </div>
-
-    <section class="row">
-      <div class="col-md-12 whatsapp-bg py-5 px-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <h2>Quem somos</h2>
-              <p></p>
-            </div>
-            <div class="col-md-8">
-              <Carousel />
-            </div>
-          </div>
+  </section>
+  <section class="container-fluid px-0 pattern-image">
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-sm-column-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-12 col-lg-6">
+          <Image
+            src={radiodentImage}
+            alt="Radiodent"
+            class:list={["img-fluid", "rounded-3"]}
+          />
         </div>
-      </div>
-    </section>
-    <div class="container px-4 py-5" id="featured-3">
-      <h2 class="pb-2 border-bottom">Columns with icons</h2>
-      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-        <div class="feature col">
-          <div class="feature-icon bg-primary bg-gradient">
-            <svg class="bi" width="1em" height="1em"
-              ><use xlink:href="#collection"></use></svg
-            >
-          </div>
-          <h2>Featured title</h2>
-          <p>
-            Paragraph of text beneath the heading to explain the heading. We'll
-            add onto it with another sentence and probably just keep going until
-            we run out of words.
+        <div class="col-lg-6">
+          <h1 class="display-4 fw-bold lh-1 mb-3 main-color">Quem somos</h1>
+          <p class="lead">
+            Desde 2000, a Radiodent é um ponto de referência em Madureira,
+            oferecendo serviços de radiografia odontológica de alta qualidade.
+            Nossa equipe de profissionais especializados realiza exames
+            personalizados, garantindo diagnósticos precisos para especialidades
+            como implantodontia, cirurgia, endodontia, periodontia e ortodontia.
           </p>
-          <a href="#" class="icon-link">
-            Call to action
-            <svg class="bi" width="1em" height="1em"
-              ><use xlink:href="#chevron-right"></use></svg
-            >
-          </a>
-        </div>
-        <div class="feature col">
-          <div class="feature-icon bg-primary bg-gradient">
-            <svg class="bi" width="1em" height="1em"
-              ><use xlink:href="#people-circle"></use></svg
-            >
-          </div>
-          <h2>Featured title</h2>
-          <p>
-            Paragraph of text beneath the heading to explain the heading. We'll
-            add onto it with another sentence and probably just keep going until
-            we run out of words.
+          <p class="lead">
+            Utilizamos tecnologia digital avançada, eliminando produtos químicos
+            e reduzindo a exposição dos pacientes aos raios-x. Também mantemos
+            parcerias com empresas, dentistas e Planos Odontológicos, reforçando
+            nosso compromisso com a excelência na saúde bucal. Na Radiodent,
+            você encontra confiança, inovação e cuidado excepcional em cada
+            detalhe.
           </p>
-          <a href="#" class="icon-link">
-            Call to action
-            <svg class="bi" width="1em" height="1em"
-              ><use xlink:href="#chevron-right"></use></svg
-            >
-          </a>
-        </div>
-        <div class="feature col">
-          <div class="feature-icon bg-primary bg-gradient">
-            <svg class="bi" width="1em" height="1em"
-              ><use xlink:href="#toggles2"></use></svg
-            >
-          </div>
-          <h2>Featured title</h2>
-          <p>
-            Paragraph of text beneath the heading to explain the heading. We'll
-            add onto it with another sentence and probably just keep going until
-            we run out of words.
-          </p>
-          <a href="#" class="icon-link">
-            Call to action
-            <svg class="bi" width="1em" height="1em"
-              ><use xlink:href="#chevron-right"></use></svg
-            >
-          </a>
         </div>
       </div>
     </div>
-  </main>
+  </section>
+  <section class="container-fluid bg-light px-0">
+    <Exames />
+  </section>
 </Layout>
 
 <style>
@@ -115,6 +75,13 @@ import Layout from "../layouts/Layout.astro";
     background-image: url("/images/hero-image.png");
     background-size: cover;
     min-height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .pattern-image {
+    background-image: url("/images/pattern.png");
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
