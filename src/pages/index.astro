@@ -16,35 +16,37 @@ const yearsSinc = new Date().getFullYear() - 2000 + 1;
     >
       <div class="col-lg-6 text-left">
         <h1 class="display-5 fw-bold main-color">Bem vindo a Radiodent</h1>
-        <p class="lead mb-4">
+        <p class="lead mb-4 fs-6">
           Há {yearsSinc} anos, a Radiodent tem sido um ponto de referência em Madureira,
-          oferecendo serviços odontológicos de alta qualidade e excelência. Nossa
-          equipe altamente qualificada está comprometida em proporcionar o melhor
-          atendimento aos nossos pacientes.
+          oferecendo serviços odontológicos de alta qualidade e excelência. <br
+          />
+          Nossa equipe altamente qualificada está comprometida em proporcionar o
+          melhor atendimento aos nossos pacientes.
         </p>
       </div>
     </div>
   </section>
   <section class="container-fluid px-0 pattern-image">
     <div class="container col-xxl-8 px-4 py-5">
-      <div class="row flex-sm-column-reverse align-items-center g-5 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-10 col-sm-12 col-lg-6">
           <Image
             src={radiodentImage}
             alt="Radiodent"
-            class:list={["img-fluid", "rounded-3"]}
+            height={400}
+            class:list={["rounded-3"]}
           />
         </div>
         <div class="col-lg-6">
-          <h1 class="display-4 fw-bold lh-1 mb-3 main-color">Quem somos</h1>
-          <p class="lead">
+          <h1 class="display-6 fw-bold lh-1 mb-3 main-color">Quem somos</h1>
+          <p class="lead fs-6">
             Desde 2000, a Radiodent é um ponto de referência em Madureira,
             oferecendo serviços de radiografia odontológica de alta qualidade.
             Nossa equipe de profissionais especializados realiza exames
             personalizados, garantindo diagnósticos precisos para especialidades
             como implantodontia, cirurgia, endodontia, periodontia e ortodontia.
           </p>
-          <p class="lead">
+          <p class="lead fs-6">
             Utilizamos tecnologia digital avançada, eliminando produtos químicos
             e reduzindo a exposição dos pacientes aos raios-x. Também mantemos
             parcerias com empresas, dentistas e Planos Odontológicos, reforçando
