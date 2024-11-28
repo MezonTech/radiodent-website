@@ -13,7 +13,7 @@ debug("exames")("exames", servicos);
     {
       servicos.map((servico) => (
         <div class="feature col">
-          <div class="feature-icon bg-primary bg-gradient">
+          <div class="feature-icon bg-main  bg-gradient">
             <i class={"bi " + servico.icone} />
           </div>
           <h2>{servico.categoria}</h2>
@@ -52,6 +52,10 @@ debug("exames")("exames", servicos);
     font-size: 2rem;
     color: #fff;
     border-radius: 0.75rem;
+  }
+
+  .bg-main {
+    background-color: #015697;
   }
 
   .btn-main {
