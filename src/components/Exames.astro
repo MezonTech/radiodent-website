@@ -19,7 +19,7 @@ debug("exames")("exames", servicos);
           <h2>{servico.categoria}</h2>
           <div set:html={servico.descricao} />
           <a href="#" class="icon-link">
-            Ver mais
+            Saiba mais
             <svg class="bi" width="1em" height="1em">
               <use xlink:href="#chevron-right" />
             </svg>
@@ -27,6 +27,17 @@ debug("exames")("exames", servicos);
         </div>
       ))
     }
+  </div>
+
+  <div class="row py-5">
+    <div class="col-12 text-center">
+      <a
+        type="button"
+        class="btn btn-lg btn-primary btn-main"
+        href="https://api.whatsapp.com/send?phone=5521984771334&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20exame."
+        target="_blank">Faça o seu agendamento</a
+      >
+    </div>
   </div>
 </div>
 
@@ -41,5 +52,12 @@ debug("exames")("exames", servicos);
     font-size: 2rem;
     color: #fff;
     border-radius: 0.75rem;
+  }
+
+  .btn-main {
+    background-color: #015697;
+  }
+  .btn-main:hover {
+    background-color: #005697;
   }
 </style>
