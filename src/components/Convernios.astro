@@ -9,6 +9,7 @@ import data from "../../public/data/images.json";
 const images = data;
 
 const { isIndexPage } = Astro.props;
+const { site, base } = astroConfig;
 ---
 
 <div class="container px-4 py-5 bg-none" id="featured-3">
@@ -24,7 +25,7 @@ const { isIndexPage } = Astro.props;
           <div class="col-1">
             <a href="/convenios">
               <img
-                src={astroConfig.site + "/" + image.src}
+                src={site + "/" + base + image.src}
                 alt={image.name}
                 class="img-fluid border rounded-3 hover-zoom"
               />
