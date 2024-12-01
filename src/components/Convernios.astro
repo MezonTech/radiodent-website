@@ -22,7 +22,7 @@ const { site, base } = astroConfig;
     {
       images.slice(0, isIndexPage ? 14 : images.length).map((image) =>
         isIndexPage ? (
-          <div class="col-1">
+          <div class="col-1 col-lg-1 col-md-4">
             <a href="/convenios">
               <img
                 src={site + "/" + base + image.src}
