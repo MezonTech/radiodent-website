@@ -3,116 +3,107 @@ import astroConfig from "../../astro.config.mjs";
 ---
 
 <div class="container-fluid bg-light">
-  <div class="container">
-    <nav class="navbar navbar-expand-lg py-4">
-      <a class="navbar-brand" href={astroConfig.site}>
-        <img src="images/logo.png" alt="Logo Radiodent" width="350" />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasRight"
-        aria-controls="offcanvasRight"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div
-        class="offcanvas offcanvas-end w-25"
-        tabindex="-1"
-        id="offcanvasRight"
-        aria-labelledby="offcanvasRightLabel"
-      >
-        <div class="offcanvas-header">
-          <img
-            src="images/logo.jpg"
-            class="w-75"
-            style="mix-blend-mode: multiply;"
-            alt="Logo Radiodent"
-          />
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body d-flex justify-content-center">
-          <ul
-            class="navbar-nav ms-auto d-flex h-100 gap-5 justify-content-space-between"
-          >
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                data-bs-dismiss="offcanvas"
-                href={astroConfig.site}
-              >
-                <i
-                  class="bi bi-house-door-fill me-2 d-none d-sm-block d-md-none"
-                ></i> Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                data-bs-dismiss="offcanvas"
-                href={astroConfig.site + "/exames"}
-              >
-                <i
-                  class="bi bi-clipboard-check-fill me-2 d-none d-sm-block d-md-none"
-                ></i> Exames</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                data-bs-dismiss="offcanvas"
-                href={astroConfig.site + "/convenios"}
-              >
-                <i class="bi bi-people-fill me-2 d-none d-sm-block d-md-none"
-                ></i>
-                Convênios</a
-              >
-            </li>
-
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                data-bs-dismiss="offcanvas"
-                href={astroConfig.site + "/download"}
-              >
-                <i class="bi bi-download me-2 d-none d-sm-block d-md-none"></i>
-                Requisição</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                data-bs-dismiss="offcanvas"
-                href={astroConfig.site + "/sobre"}
-              >
-                <i
-                  class="bi bi-info-circle-fill me-2 d-none d-sm-block d-md-none"
-                ></i> Quem somos</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                data-bs-dismiss="offcanvas"
-                href={astroConfig.site + "/contato"}
-              >
-                <i class="bi bi-envelope-fill me-2 d-none d-sm-block d-md-none"
-                ></i> Contato</a
-              >
-            </li>
-          </ul>
-        </div>
+  <nav class="navbar navbar-expand-lg py-4">
+    <a class="navbar-brand" href={astroConfig.site}>
+      <img
+        src="images/logo.png"
+        alt="Logo Radiodent"
+        class="img-fluid"
+        width="250"
+      />
+    </a>
+    <button
+      class="navbar-toggler shadow-none border-0"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="offcanvas offcanvas-start bg-dark text-light justify-content-center"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+      style="backdrop-filter: blur(10px);"
+    >
+      <div class="offcanvas-header border-bottom">
+        <a class="navbar-brand" href={astroConfig.site}>
+          <img src="images/logo.png" alt="Logo Radiodent" width="250" />
+        </a>
+        <button
+          type="button"
+          class="btn-close btn-close-white shadow-none me-2"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"></button>
       </div>
-    </nav>
-  </div>
+      <div
+        class="offcanvas-body d-flex flex-column justify-content-center align-items-center"
+      >
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              data-bs-dismiss="offcanvas"
+              href={astroConfig.site}
+            >
+              Página inicial
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-bs-dismiss="offcanvas"
+              href={astroConfig.site + "/exames"}
+            >
+              Exames</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-bs-dismiss="offcanvas"
+              href={astroConfig.site + "/convenios"}
+            >
+              Convênios</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-bs-dismiss="offcanvas"
+              href={astroConfig.site + "/download"}
+            >
+              Requisição</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-bs-dismiss="offcanvas"
+              href={astroConfig.site + "/sobre"}
+            >
+              Quem somos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-bs-dismiss="offcanvas"
+              href={astroConfig.site + "/contato"}
+            >
+              Contato</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </div>
 
 <style>
