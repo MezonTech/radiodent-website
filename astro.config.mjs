@@ -8,7 +8,7 @@ import robotsTxt from "astro-robots-txt";
 export default defineConfig({
   site: "https://mezontech.github.io",
   // site: "http://localhost:4321",
-  base: "radiodent-website",
+  base: "/radiodent-website",
   // base: "/",
   integrations: [
     robotsTxt(),
