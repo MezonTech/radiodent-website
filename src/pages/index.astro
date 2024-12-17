@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import radiodentImage from "../../public/images/entrada-clinica.jpeg";
 import Image from "astro/components/Image.astro";
-import Exames from "../components/Exames.astro";
+import ExamesLista from "../components/ExamesLista.astro";
 import Convernios from "../components/Convernios.astro";
 import Map from "../components/Map.astro";
 
@@ -62,7 +62,7 @@ const yearsSinc = new Date().getFullYear() - 2000 + 1;
     </div>
   </section>
   <section class="container-fluid bg-light px-0">
-    <Exames />
+    <ExamesLista />
   </section>
   <section class="container-fluid bg-light px-0 convenio-image py-5">
     <Convernios isIndexPage />
