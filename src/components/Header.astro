@@ -2,8 +2,8 @@
 import astroConfig from "../../astro.config.mjs";
 ---
 
-<nav class="navbar navbar-expand-lg py-4 bg-light">
-  <div class="container mx-auto">
+<nav class="navbar navbar-expand-lg py-4 bg-light mx-auto">
+  <div class="container d-flex justify-content-space-between">
     <a class="navbar-brand" href={astroConfig.site}>
       <img
         src="images/logo.png"
@@ -24,7 +24,7 @@ import astroConfig from "../../astro.config.mjs";
       <span class="navbar-toggler-icon"></span>
     </button>
     <div
-      class="offcanvas offcanvas-start bg-light main-color justify-content-center"
+      class="offcanvas offcanvas-start bg-light main-color"
       tabindex="-1"
       id="offcanvasRight"
       aria-labelledby="offcanvasRightLabel"
@@ -41,9 +41,9 @@ import astroConfig from "../../astro.config.mjs";
           aria-label="Close"></button>
       </div>
       <div
-        class="offcanvas-body d-flex flex-column justify-content-center align-items-center"
+        class="offcanvas-body d-flex flex-column justify-content-end align-items-end"
       >
-        <ul class="navbar-nav mx-auto">
+        <ul class="navbar-nav">
           <li class="nav-item">
             <a
               class="nav-link active"
