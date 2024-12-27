@@ -58,7 +58,7 @@ import astroConfig from "../../astro.config.mjs";
             <a
               class="nav-link"
               data-bs-dismiss="offcanvas"
-              href={astroConfig.site + "/exames"}
+              href={astroConfig.site + (astroConfig?.base || "/") + "exames"}
             >
               Exames</a
             >
