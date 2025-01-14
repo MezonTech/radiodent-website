@@ -3,7 +3,7 @@
     {
       "icone": "bi-file-medical",
       "categoria": "Radiografias Dentárias",
-      "descricao": "<p>As radiografias dentárias ajudam a identificar problemas invisíveis a olho nu e são essenciais para diagnósticos e planejamento de tratamentos. Confira os diferentes tipos:</p>",
+      "descricao": "<p>As radiografias dentárias são exames auxiliares de diagnóstico e ajudam o dentista a identificar imagens invisíveis ao exame clínico. Elas são de extrema importância para estabelecer diagnósticos e planos de tratamentos. <br/> Confira os diferentes tipos:</p>",
       "tipos": [
         {
           "titulo": "Intra-orais",
@@ -61,7 +61,7 @@
     {
       "icone": "bi-graph-up-arrow",
       "categoria": "Análises Cefalométricas",
-      "descricao": "<p>Essas análises permitem que o ortodontista planeje o melhor tratamento, usando técnicas específicas para cada caso.</p>",
+      "descricao": "<p>São análises realizadas em imagens de radiografias cefalométricas que permitem que o profissional planeje o melhor tratamento, usando técnicas específicas e individualizadas para seus pacientes.</p>",
       "tipos": [
         {
           "titulo": "Análises Principais",
@@ -102,7 +102,7 @@
     {
       "icone": "bi-camera",
       "categoria": "Fotografias Dentárias",
-      "descricao": "<p>As fotografias dentárias permitem ao ortodontista acompanhar o progresso e planejar ajustes ao longo do tratamento.</p>",
+      "descricao": "<p>As fotografias dentárias permitem ao profissional acompanhar o progresso e planejar ajustes ao longo do tratamento de cada paciente.</p>",
       "tipos": [
         {
           "titulo": "Intra-orais",
@@ -143,7 +143,7 @@
     {
       "icone": "bi-layers",
       "categoria": "Modelos em Gesso",
-      "descricao": "<p>Modelos em gesso são criados para observar os dentes e planejamento em 3D, tanto para estudo quanto para trabalho.</p>",
+      "descricao": "<p>Modelos em gesso são criados para observar os dentes e a relação entre as arcadas dentárias de cada paciente, facilitando o planejamento do tratamento. Eles podem ser confeccionados objetivando o estudo de cada caso (modelo de estudo) como também para o manuseio (modelos de trabalho)</p>",
       "tipos": [
         {
           "nome": "Para estudo",
@@ -157,8 +157,8 @@
     },
     {
       "icone": "bi-cpu",
-      "categoria": "Tomografias Dentárias",
-      "descricao": "<p>As tomografias oferecem imagens tridimensionais detalhadas para planejamento cirúrgico e diagnóstico preciso.</p>",
+      "categoria": "Tomografias Computadorizadas",
+      "descricao": "<p>As tomografias computadorizadas de feixe cônico (cone beam) produzem imagens tridimensionais em tamanho real, livres de distorção, que oferecem grande quantidade de detalhes essenciais para o planejamento cirúrgico e diagnóstico preciso.</p>",
       "tipos": [
         {
           "nome": "Tomografia Computadorizada Cone Beam",

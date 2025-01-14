@@ -6,10 +6,10 @@ import robotsTxt from "astro-robots-txt";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://mezontech.github.io",
-  // site: "http://localhost:4321",
-  base: "/radiodent-website/",
-  // base: "/",
+  // site: "https://mezontech.github.io",
+  site: "http://localhost:4321",
+  // base: "/radiodent-website/",
+  base: "/",
   integrations: [
     robotsTxt(),
     sitemap(),
