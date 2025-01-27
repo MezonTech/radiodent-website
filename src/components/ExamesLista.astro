@@ -30,7 +30,7 @@ const { servicos } = data;
     <div class="col-12 text-center">
       <a
         type="button"
-        class="btn btn-lg btn-outline-primary btn-main"
+        class="btn btn-lg btn-outline-primary btn-main text-white"
         href="https://api.whatsapp.com/send?phone=5521984771334&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20exame."
         target="_blank"
         ><i class="bi bi-calendar-check me-2"></i>Faça o seu agendamento</a
@@ -60,6 +60,9 @@ const { servicos } = data;
     background-color: #015697;
   }
   .btn-main:hover {
-    background-color: #005697;
+    background-color: #215697;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.9;
+    box-shadow: inset 0 0 0 1px #015697;
   }
 </style>
