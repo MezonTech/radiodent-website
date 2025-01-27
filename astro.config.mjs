@@ -22,7 +22,7 @@ export default defineConfig({
       accessibility: true,
       forms: false,
       morph: false,
-      parallel: false,
+      parallel: true,
       progress: false,
       routes: false,
       smoothScrolling: true,
@@ -31,7 +31,7 @@ export default defineConfig({
       reloadScripts: true,
       debug: false,
       loadOnIdle: true,
-      globalInstance: false,
+      globalInstance: true,
     }),
   ],
 });
