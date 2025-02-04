@@ -1,6 +1,6 @@
 ---
+import astroConfig from "../../astro.config.mjs";
 import Layout from "../layouts/Layout.astro";
-
 const convenios = [
   { nome: "Amil Dental", logo: "/images/convenios/amil-dental.png" },
   { nome: "Appai", logo: "/images/convenios/appai.png" },
@@ -71,7 +71,7 @@ const documentosObrigatorios = [
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <div class="card text-center shadow-sm border-0 rounded-4 p-3">
               <img
-                src={convenio.logo}
+                src={astroConfig.site + astroConfig.base + convenio.logo}
                 alt={convenio.nome}
                 class="img-fluid mx-auto d-block"
               />
