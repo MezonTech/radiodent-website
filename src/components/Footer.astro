@@ -37,8 +37,8 @@
         <p class="text-light">
           Desenvolvido por
           <a
-            href="https://www.mezon.tec.br/"
-            class="text-light"
+            href="https://www.mezon.com.br/"
+            class="text-light fw-bold"
             target="_blank"
             rel="noopener noreferrer">Mezon Tech</a
           >
@@ -49,15 +49,23 @@
 
   <style>
     .social-media-links a {
-      color: #001197;
+      color: #ffffff; /* Cor base em branco para melhor contraste */
+      opacity: 0.85;
+      transition:
+        color 0.4s ease,
+        transform 0.4s ease,
+        opacity 0.4s ease;
     }
+
     .social-media-links a:hover {
-      color: #001147;
-      transition: all 0.5s ease-in-out;
-      opacity: 0.8;
+      color: #d3d3d3;
+      transform: translateY(-3px);
+      opacity: 0.96;
     }
+
     .footer-background {
-      background-color: #005697;
+      background: linear-gradient(135deg, #004080 0%, #0077b6 100%);
+      color: #ffffff;
     }
   </style>
 </footer>
