@@ -2,6 +2,7 @@
 import Image from "astro/components/Image.astro";
 import Layout from "../layouts/Layout.astro";
 import formImage from "../../public/images/free-macbook-pro-with-female-professional.jpg";
+import pdf from "../../public/requisicao.pdf";
 ---
 
 <Layout title="Requisição - Radiodent Radiologia Odontológica">
@@ -27,10 +28,16 @@ import formImage from "../../public/images/free-macbook-pro-with-female-professi
             desse documento facilita o agendamento e a execução da radiografia,
             garantindo um diagnóstico preciso e eficiente.
           </p>
-          <a class="btn btn-lg btn-outline-custom me-2 fs-6"
-            ><i class="bi bi-filetype-pdf me-2"></i>Requisição PDF</a
-          >
-          <a class="btn btn-lg btn-outline-custom fs-6"
+          <a class="btn btn-lg btn-outline-custom me-2 fs-6" href={pdf}
+            ><i class="bi
+            bi-filetype-pdf
+            me-2"
+            ></i>Requisição PDF
+          </a>
+          <a
+            class="btn btn-lg btn-outline-custom fs-6"
+            href="/formulario.html"
+            target="_blank"
             ><i class="bi bi-ui-checks me-2"></i> Preencher requisição</a
           >
         </div>
