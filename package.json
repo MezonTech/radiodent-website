@@ -8,7 +8,8 @@
     "start-host": "astro dev --host",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "build:prod": "NODE_ENV=production astro build"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
