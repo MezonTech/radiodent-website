@@ -47,6 +47,10 @@ import Whatsapp from "../components/Whatsapp.astro";
       href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
@@ -93,7 +97,7 @@ import Whatsapp from "../components/Whatsapp.astro";
   .btn-whatsapp:hover {
     background-color: #1db954;
     color: #fff;
-    box-shadow: 1px 1px 1px #232332;
+    box-shadow: 1px 1px -5px #232332;
     transition: all 0.5s ease-in-out;
   }
   .bg-main {
@@ -102,6 +106,14 @@ import Whatsapp from "../components/Whatsapp.astro";
 
   .btn-main {
     background-color: var(--main-color);
+    color: #ffffff;
+  }
+
+  .btn-main:hover {
+    opacity: 0.8;
+    background-color: var(--main-color);
+    transform: translateY(-3px);
+    transition: ease-in 0.3s;
     color: #ffffff;
   }
 

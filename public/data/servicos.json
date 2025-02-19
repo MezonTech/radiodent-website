@@ -3,6 +3,7 @@
     {
       "icone": "bi-file-medical",
       "categoria": "Radiografias Dentárias",
+      "imagem": "panoramica.jpg",
       "descricao": "<p>As radiografias dentárias são exames auxiliares de diagnóstico e ajudam o dentista a identificar imagens invisíveis ao exame clínico. Elas são de extrema importância para estabelecer diagnósticos e planos de tratamentos. <br/> Confira os diferentes tipos:</p>",
       "tipos": [
         {
@@ -61,6 +62,7 @@
     {
       "icone": "bi-graph-up-arrow",
       "categoria": "Análises Cefalométricas",
+      "imagem": "periapical_completo.jpg",
       "descricao": "<p>São análises realizadas em imagens de radiografias cefalométricas que permitem que o profissional planeje o melhor tratamento, usando técnicas específicas e individualizadas para seus pacientes.</p>",
       "tipos": [
         {
@@ -102,6 +104,7 @@
     {
       "icone": "bi-camera",
       "categoria": "Fotografias Dentárias",
+      "imagem": "fotografia_dental.jpg",
       "descricao": "<p>As fotografias dentárias permitem ao profissional acompanhar o progresso e planejar ajustes ao longo do tratamento de cada paciente.</p>",
       "tipos": [
         {
@@ -143,6 +146,7 @@
     {
       "icone": "bi-layers",
       "categoria": "Modelos em Gesso",
+      "imagem": "modelos.jpg",
       "descricao": "<p>Modelos em gesso são criados para observar os dentes e a relação entre as arcadas dentárias de cada paciente, facilitando o planejamento do tratamento. Eles podem ser confeccionados objetivando o estudo de cada caso (modelo de estudo) como também para o manuseio (modelos de trabalho)</p>",
       "tipos": [
         {
@@ -158,6 +162,7 @@
     {
       "icone": "bi-cpu",
       "categoria": "Tomografias Computadorizadas",
+      "imagem": "tomografia.jpg",
       "descricao": "<p>As tomografias computadorizadas de feixe cônico (cone beam) produzem imagens tridimensionais em tamanho real, livres de distorção, que oferecem grande quantidade de detalhes essenciais para o planejamento cirúrgico e diagnóstico preciso.</p>",
       "tipos": [
         {

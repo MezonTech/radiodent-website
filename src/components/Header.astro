@@ -1,13 +1,18 @@
 ---
 import Image from "astro/components/Image.astro";
 import astroConfig from "../../astro.config.mjs";
-import logo from "../../public/images/logo.png";
+const optimizedBackgroundImage = "/images/logo.png";
 ---
 
 <nav class="navbar navbar-expand-lg py-4 bg-light mx-auto">
   <div class="container d-flex justify-content-space-between">
     <a class="navbar-brand" href={astroConfig.site}>
-      <Image src={logo} alt="Logo Radiodent" class="img-fluid" width="250" />
+      <img
+        src={optimizedBackgroundImage}
+        alt="Logo Radiodent"
+        class="img-fluid"
+        width="250"
+      />
     </a>
     <button
       class="navbar-toggler shadow-none border-0"
@@ -18,7 +23,7 @@ import logo from "../../public/images/logo.png";
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <span class="navbar-toggler-icon"></span>
+      <i class="bi bi-list-nested fs-1 main-color"></i>
     </button>
     <div
       class="offcanvas offcanvas-start bg-light main-color"
@@ -38,7 +43,7 @@ import logo from "../../public/images/logo.png";
           aria-label="Close"></button>
       </div>
       <div
-        class="offcanvas-body d-flex flex-column justify-content-end align-items-end"
+        class="offcanvas-body d-flex flex-column justify-content-center align-items-center"
       >
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -105,5 +110,57 @@ import logo from "../../public/images/logo.png";
   nav ul li a:hover {
     color: #005697;
     opacity: 0.8;
+  }
+  @media screen and (max-width: 768px) {
+    .offcanvas.show {
+      display: block;
+    }
+
+    .offcanvas-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      background: #015697;
+      background: radial-gradient(at right bottom, #015697, #0d0e16);
+      opacity: 0;
+    }
+
+    .offcanvas.show .offcanvas-body {
+      transform: perspective(1000px) scale(1) rotateX(0deg);
+      opacity: 1;
+    }
+
+    .navbar-nav {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .nav-item {
+      margin: 10px 0;
+    }
+
+    .nav-link {
+      color: white;
+      font-size: 1.4rem;
+      font-weight: bold;
+      text-decoration: none;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .nav-link:hover {
+      opacity: 0.8;
+    }
+
+    nav ul li a {
+      color: #ffffff;
+      font-size: 2rem;
+    }
+
+    .nav-link.active {
+      color: #ffffff;
+    }
   }
 </style>
