@@ -34,7 +34,11 @@ const { site, base } = astroConfig;
     >
       <div class="offcanvas-header border-bottom">
         <a class="navbar-brand" href={astroConfig.site}>
-          <img src="images/logo.png" alt="Logo Radiodent" width="250" />
+          <img
+            src={site + base + optimizedBackgroundImage}
+            alt="Logo Radiodent"
+            width="250"
+          />
         </a>
         <button
           type="button"
