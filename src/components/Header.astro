@@ -2,13 +2,14 @@
 import Image from "astro/components/Image.astro";
 import astroConfig from "../../astro.config.mjs";
 const optimizedBackgroundImage = "/images/logo.png";
+const { site, base } = astroConfig;
 ---
 
 <nav class="navbar navbar-expand-lg py-4 bg-light mx-auto">
   <div class="container d-flex justify-content-space-between">
-    <a class="navbar-brand" href={astroConfig.site}>
+    <a class="navbar-brand" href={site}>
       <img
-        src={optimizedBackgroundImage}
+        src={site + (base || "/") + optimizedBackgroundImage}
         alt="Logo Radiodent"
         class="img-fluid"
         width="250"
