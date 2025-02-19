@@ -1,3 +1,9 @@
+---
+import astroConfig from "../../astro.config.mjs";
+
+const { site, base } = astroConfig;
+---
+
 <footer
   class="container-fluid footer-background text-light position-relative bottom-0"
 >
@@ -31,20 +37,32 @@
             title="Linkedin radiodent"><i class="bi bi-linkedin fs-4"></i></a
           >
         </p>
+        <div class="fw-bold">
+          <a
+            href={site + base + "politica-de-privacidade"}
+            class="text-light fw-bold text-decoration-none"
+          >
+            Política de Privacidade
+          </a>
+        </div>
       </div>
 
       <div
         class="col-sm-12 col-md-6 mb-3 d-flex align-items-start justify-content-end"
       >
-        <p class="text-light">
-          Desenvolvido por
-          <a
-            href="https://www.mezon.com.br/"
-            class="text-light fw-bold"
-            target="_blank"
-            rel="noopener noreferrer">Mezon Tech</a
-          >
-        </p>
+        <div class="text-light d-flex flex-column g-2 flex-wrap">
+          <div class="fw-bold">
+            Desenvolvido por
+            <a
+              href="https://www.mezon.com.br/"
+              class="fw-bold"
+              style="color: orangered;"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Mezon Tech
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
