@@ -1,9 +1,11 @@
 ---
-import { Image } from "astro:assets";
+import astroConfig from "../../astro.config.mjs";
 
 const { index, servico } = Astro.props;
+const { site, base } = astroConfig;
 
-const optimizedBackgroundImage = "/images/exames/" + servico.imagem;
+const optimizedBackgroundImage =
+  site + base + "images/exames/" + servico.imagem;
 ---
 
 <div
