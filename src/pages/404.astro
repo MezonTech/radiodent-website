@@ -1,0 +1,40 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import image from "/public/images/404.svg";
+---
+
+<Layout title="Página não encontrada - Radiodent Radiologia Odontológica">
+  <main class="container">
+    <div class="row justify-content-center py-5">
+      <div class="col-md-12 text-center">
+        <Image src={image} alt="Página não encontrada" width={450} />
+        <div class="error-message">Página não encontrada.</div>
+        <a href="/" class="btn btn-link">Voltar para página inicial</a>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .error-code {
+    font-size: 100px;
+    font-weight: bold;
+  }
+  .error-message {
+    font-size: 24px;
+    margin: 20px auto;
+  }
+  .btn-custom {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .btn-custom:hover {
+    background-color: #c82333;
+  }
+</style>

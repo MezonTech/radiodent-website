@@ -1,0 +1,58 @@
+---
+interface Props {
+  isIndexPage: boolean;
+}
+
+import astroConfig from "../../astro.config.mjs";
+import data from "../../public/data/images.json";
+
+const images = data;
+
+const { isIndexPage } = Astro.props;
+const { site, base } = astroConfig;
+---
+
+<div class="container px-4 py-5 bg-none" id="featured-3">
+  <h1 class="display-6 fw-bold lh-1 mb-3 main-color">Convênios</h1>
+  <p class="lead">
+    Você pode observar na listagem abaixo, alguns convênios com os quais
+    trabalhamos. Consulte-nos para maiores informações.
+  </p>
+  <div class="row g-4 py-5 row-cols-4 row-cols-sm-6 row-cols-lg-12">
+    {
+      images.slice(0, isIndexPage ? 14 : images.length).map((image) =>
+        isIndexPage ? (
+          <div class="col-lg-1 col-md-4 col-sm-6">
+            <a href="/convenios" class="d-block mb-4 h-100">
+              <img
+                src={site + "/" + base + image.src}
+                alt={image.name}
+                title={image.name}
+                class="img-fluid border rounded-3 hover-zoom"
+              />
+            </a>
+          </div>
+        ) : (
+          <div class="col-1">
+            <a href="/convenios" class="d-block mb-4 h-100 hover-zoom">
+              <img
+                src={astroConfig.site + "/" + image.src}
+                alt={image.name}
+                title={image.name}
+                class="img-fluid border rounded-3"
+              />
+            </a>
+          </div>
+        )
+      )
+    }
+  </div>
+</div>
+
+<style>
+  .hover-zoom:hover {
+    transform: scale(1.01);
+    transition: all 0.5s ease-in-out;
+    opacity: 0.8;
+  }
+</style>

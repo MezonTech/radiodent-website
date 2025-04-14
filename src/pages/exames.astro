@@ -1,0 +1,47 @@
+---
+import services from "../../public/data/servicos.json";
+import Layout from "../layouts/Layout.astro";
+import Modal from "../components/Modal.astro";
+---
+
+<Layout
+  title="Exames - Radiodent Radiologia Odontológica"
+  class:list={"transition-fade"}
+>
+  <section class="container my-5">
+    <h4 class="fw-bold main-color">Exames</h4>
+    <p class="text-muted">
+      Confira abaixo os exames realizados pela nossa clínica.
+    </p>
+    <hr class="border border-custom border-3 opacity-75 w-25 mb-4" />
+    <div class="row g-5">
+      {
+        services.servicos.map((servico, index) => (
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card shadow-lg border-0 rounded-3 d-flex flex-column h-100 ">
+              <div class="card-body p-4 flex-grow-1 position-relative ">
+                <div class="icon mb-3">
+                  <i class={servico.icone + " main-color fs-1"} />
+                </div>
+                <h5 class="card-title fw-bold">{servico.categoria}</h5>
+                <div
+                  class="card-text text-muted h-50 overflow-hidden"
+                  set:html={servico.descricao}
+                />
+                <button
+                  class="btn btn-primary px-4 rounded-3 mt-3 btn-main "
+                  data-bs-toggle="modal"
+                  data-bs-target={`#modal-${index}`}
+                >
+                  Ver Detalhes
+                </button>
+
+                <Modal index={index} servico={servico} />
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+</Layout>

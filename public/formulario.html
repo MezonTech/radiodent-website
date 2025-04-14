@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulário de Solicitação de Exames Odontológicos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .poppins-thin {
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+
+      .poppins-extralight {
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+      }
+
+      .poppins-light {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+
+      .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .poppins-medium {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      .poppins-semibold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      .poppins-bold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      .poppins-extrabold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+      }
+
+      .poppins-black {
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+
+      .poppins-thin-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: italic;
+      }
+
+      .poppins-extralight-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: italic;
+      }
+
+      .poppins-light-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+      }
+
+      .poppins-regular-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+
+      .poppins-medium-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+      }
+
+      .poppins-semibold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+      }
+
+      .poppins-bold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+      }
+
+      .poppins-extrabold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: italic;
+      }
+
+      .poppins-black-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-style: italic;
+      }
+
+      /* Estilos para listas e checkboxes */
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        color: #102b3f;
+        font-size: 1rem;
+      }
+
+      body {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 12px;
+        font-size: 16px;
+        max-height: 100vh;
+      }
+
+      h1 {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        color: #102b3f !important;
+        font-size: 1.5rem;
+      }
+
+      h2 {
+        print-color-adjust: exact;
+        margin-top: 16px;
+        font-size: 1.2rem;
+        background-color: #009ffd !important;
+        border-radius: 4px;
+        padding: 8px 8px;
+        color: #fff;
+      }
+
+      h3 {
+        margin-top: 4px;
+        margin-bottom: 8px;
+        font-size: 1rem;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #eaf6ff;
+        padding: 8px 6px;
+        border-radius: 8px;
+      }
+      li {
+        display: flex;
+        align-items: stretch;
+        margin-bottom: 6px;
+      }
+      input[type="checkbox"] {
+        margin-right: 6px;
+        width: 18px;
+        height: 18px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      .control {
+        display: flex;
+        align-items: end;
+        justify-content: start;
+      }
+
+      .control label {
+        margin-right: 6px;
+        color: #102b3f;
+        font-weight: 400;
+        font-size: medium;
+      }
+
+      .control input {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        height: 32px;
+        border: none;
+        padding-bottom: 0;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .dente {
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+        display: inline-block;
+        text-align: center;
+        margin: 2px;
+      }
+
+      table {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 8px;
+        border: 0px solid #ccc;
+      }
+
+      thead,
+      tbody {
+        border: 0px;
+        margin-top: 16px;
+        margin-bottom: 4px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      th {
+        padding: 16px;
+        text-align: left;
+        border: 0px;
+      }
+
+      td {
+        border: 0px;
+        border-right: #009ffd 2px solid;
+      }
+
+      td:last-child {
+        border-right: 0px;
+      }
+
+      td {
+        padding: 8px;
+        vertical-align: top;
+      }
+
+      .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+      }
+
+      .form h1 {
+        font-size: 20px;
+        color: #009ffd !important;
+        border-bottom: 2px solid #f8f8f8;
+      }
+
+      textarea {
+        width: 100%;
+        height: 100px;
+        padding: 4px 8px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none;
+      }
+      .flex-between {
+        gap: 32px;
+      }
+
+      .flex-evenly {
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .cabecalho {
+        display: flex;
+        justify-content: start;
+        gap: 32px;
+        align-items: self-start;
+      }
+      @media print {
+        body {
+          -webkit-print-color-adjust: exact;
+          zoom: 55%;
+          max-height: 100vh;
+        }
+
+        .control input {
+          display: flex;
+          align-items: flex-end;
+          width: 100%;
+          height: 32px;
+          border: none;
+          padding-bottom: 0;
+          border-bottom: 1px solid #ccc;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <th colspan="4" style="border-bottom: #009ffd 2px solid">
+          <div class="cabecalho">
+            <img
+              style="
+                border-right: #f8f8f8 2px solid;
+                padding-right: 16px;
+                height: 100px;
+                justify-self: center;
+              "
+              src="images/logo.png"
+              alt=""
+            />
+            <div
+              style="
+                width: 30%;
+                border-right: #f8f8f8 2px solid;
+                padding-right: 16px;
+              "
+            >
+              <div class="form">
+                <h1 class="poppins-bold">Solicitante</h1>
+                <div class="control">
+                  <label for="nome" style="text-wrap: nowrap"
+                    >Dr(a) / Clinica:</label
+                  >
+                  <input type="text" id="nome" />
+                </div>
+
+                <div style="display: flex; gap: 4px">
+                  <div class="control" style="width: 50%">
+                    <label for="wpp">Cel/Whatsapp:</label>
+                    <input type="text" id="wpp" />
+                  </div>
+
+                  <div class="control" style="width: 50%">
+                    <label for="especialidade">CRO:</label>
+                    <input type="text" id="especialidade" />
+                  </div>
+                </div>
+
+                <div class="control">
+                  <label for="email" style="text-wrap: nowrap">Email:</label>
+                  <input type="text" id="email" />
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="
+                width: 30%;
+                border-right: #f8f8f8 2px solid;
+                padding-right: 16px;
+              "
+            >
+              <div class="form">
+                <h1 class="poppins-bold">Paciente</h1>
+                <div class="control">
+                  <label for="nome" style="text-wrap: nowrap"
+                    >Dr(a) / Clinica:</label
+                  >
+                  <input type="text" id="nome" />
+                </div>
+
+                <div class="control">
+                  <label for="wpp">Cel/Whatsapp:</label>
+                  <input type="text" id="wpp" />
+                </div>
+
+                <div class="control">
+                  <label for="email" style="text-wrap: nowrap">Email:</label>
+                  <input type="text" id="email" />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="poppins-regular"
+              style="
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                padding-top: 14px;
+              "
+            >
+              <p>
+                Rua Carvalho de Souza, 247 SALA 602 - Madureira, Rio de Janeiro
+                - RJ,CEP: 21350-180
+              </p>
+              <p class="poppins-bold">
+                Fone: (21) 3359-1488 | Whatsapp (21) 98477-1334
+              </p>
+              <p>radiodent@bol.com.br | www.radiodent.com.br</p>
+              <p>Responsável Técnico: Carla Barros de Oliveira | CRO 15213</p>
+            </div>
+          </div>
+        </th>
+      </thead>
+      <tr>
+        <td style="width: 25%">
+          <h2 style="margin-top: 0">RADIOGRAFIAS</h2>
+          <ul>
+            <li>
+              <div>
+                <input type="checkbox" />Periapical isolado (marcar ao lado)
+              </div>
+            </li>
+            <li class="flex-between">
+              <div><input type="checkbox" />Periapical completo</div>
+              <label for="com_grade"
+                ><input type="checkbox" id="com_grade" /> Com grade</label
+              >
+            </li>
+            <li class="flex-between">
+              <span><input type="checkbox" />Interproximal</span>
+              <label><input type="checkbox" value="esquerda" />Esquerda</label>
+              <label
+                ><input
+                  type="checkbox"
+                  name="interproximal"
+                  value="direita"
+                />Direita</label
+              >
+            </li>
+            <li class="flex-between">
+              <span><input type="checkbox" />Oclusal ortogonal</span>
+              <label
+                ><input
+                  type="checkbox"
+                  name="oclusal_ortogonal"
+                  value="superior"
+                />Superior</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="oclusal_ortogonal"
+                  value="inferior"
+                />Inferior</label
+              >
+            </li>
+            <li class="flex-between">
+              <span><input type="checkbox" />Oclusal oblíqua</span>
+              <label
+                ><input
+                  type="checkbox"
+                  name="oclusal_obliqua"
+                  value="superior"
+                />Superior.</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="oclusal_obliqua"
+                  value="inferior"
+                />Inferior.</label
+              >
+            </li>
+            <li class="flex-between">
+              <div><input type="checkbox" />Panorâmica simples</div>
+              <label for="panoramicasimples"
+                ><input type="checkbox" id="panoramicasimples" /> Para implante
+                -22%</label
+              >
+            </li>
+            <li>
+              <div><input type="checkbox" />Panorâmica com complementação</div>
+            </li>
+            <li class="flex-between">
+              <div><input type="checkbox" />Cefalométrica em perfil</div>
+              <label for="cefalometrica_em_perfil"
+                ><input type="checkbox" id="cefalometrica_em_perfil" /> em
+                P.A.</label
+              >
+            </li>
+            <li></li>
+            <li class="flex-between">
+              <div><input type="checkbox" />Cefalométrica a 45°</div>
+              <label
+                ><input
+                  type="checkbox"
+                  name="cefalometrica_45"
+                  value="direita"
+                />Esquerda</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="cefalometrica_45"
+                  value="esquerda"
+                />Direita</label
+              >
+            </li>
+            <li>
+              <div>
+                <input type="checkbox" />Punho e mão (finalidade ortodôntica)
+              </div>
+            </li>
+          </ul>
+
+          <h2>ANÁLISES COMPUTADORIZADAS</h2>
+
+          <h3 style="font-style: italic">Cefalométrica em perfil</h3>
+          <ul>
+            <li><input type="checkbox" /> Análise de adenóides</li>
+            <li><input type="checkbox" /> Bimler</li>
+            <li><input type="checkbox" /> Delmant</li>
+            <li><input type="checkbox" /> Downs</li>
+            <li><input type="checkbox" /> Jarabak</li>
+            <li><input type="checkbox" /> McNamara</li>
+            <li><input type="checkbox" /> Petrovic</li>
+            <li><input type="checkbox" /> Ricketts</li>
+            <li><input type="checkbox" /> Steiner</li>
+            <li><input type="checkbox" /> Tweed</li>
+            <li><input type="checkbox" /> Usp</li>
+            <li><input type="checkbox" /> Unicamp</li>
+            <li><input type="checkbox" /> Schwarz</li>
+            <li><input type="checkbox" /> Trevisi</li>
+            <li><input type="checkbox" /> Profis</li>
+          </ul>
+
+          <h3>Cefalométrica em P.A.</h3>
+          <ul>
+            <li><input type="checkbox" /> Ricketts frontal</li>
+          </ul>
+
+          <h3>Radiografia de Punho e Mão</h3>
+          <ul>
+            <li><input type="checkbox" /> Idade óssea</li>
+          </ul>
+
+          <h3>Estudo de modelos</h3>
+          <ul>
+            <li><input type="checkbox" /> Mista</li>
+            <li><input type="checkbox" /> Permanente</li>
+            <li><input type="checkbox" /> Bolton</li>
+          </ul>
+        </td>
+        <td style="width: 25%">
+          <img
+            src="images/odontograma-permanentes-768x370.jpeg"
+            style="scale: 1.03"
+            width="100%"
+          />
+          <h2>OBSERVAÇÕES</h2>
+          <textarea rows="4" cols="50"></textarea>
+
+          <h2>MODELOS EM GESSO</h2>
+          <ul>
+            <li><input type="checkbox" /> Modelo de estudo</li>
+            <li><input type="checkbox" /> Modelo de trabalho</li>
+          </ul>
+
+          <h2>FOTOGRAFIAS</h2>
+
+          <h3>Intraorais</h3>
+          <ul>
+            <li><input type="checkbox" /> Oclusão anterior</li>
+            <li><input type="checkbox" /> Oclusão direita</li>
+            <li><input type="checkbox" /> Oclusão esquerda</li>
+            <li><input type="checkbox" /> Oclusal superior</li>
+            <li><input type="checkbox" /> Oclusal inferior</li>
+            <li><input type="checkbox" /> Overjet</li>
+            <li><input type="checkbox" /> Overbite</li>
+          </ul>
+
+          <h3>Extraorais</h3>
+          <ul>
+            <li><input type="checkbox" /> Frente</li>
+            <li><input type="checkbox" /> Frente sorrindo</li>
+            <li><input type="checkbox" /> Perfil direito</li>
+            <li><input type="checkbox" /> Perfil direito sorrindo</li>
+            <li><input type="checkbox" /> Perfil esquerdo</li>
+            <li><input type="checkbox" /> Perfil esquerdo sorrindo</li>
+          </ul>
+        </td>
+        <td style="width: 25%">
+          <h2 style="margin-top: 0; margin-bottom: 16px">
+            TOMOGRAFIA COMPUTADORIZADA CONE BEAM
+          </h2>
+          <label for="tc-obs"
+            >Finalidade do exame, histórico clínico e observações
+            importantes:</label
+          ><br />
+          <textarea id="tc-obs" rows="4" cols="50"></textarea>
+
+          <h2>PLANEJAMENTO DE IMPLANTES</h2>
+          <ul>
+            <li><input type="checkbox" /> Maxila completa</li>
+            <li><input type="checkbox" /> Mandíbula completa</li>
+            <li>
+              <input type="checkbox" /> Regiões assinaladas (esquema ao lado)
+            </li>
+          </ul>
+
+          <h2>DIAGNÓSTICO DE ATM</h2>
+          <ul>
+            <li><input type="checkbox" /> Boca fechada</li>
+            <li><input type="checkbox" /> Boca aberta</li>
+          </ul>
+
+          <h2>PERIODONTIA</h2>
+          <ul>
+            <li><input type="checkbox" /> Avaliação de perda óssea alveolar</li>
+            <li><input type="checkbox" /> Envolvimento de furca</li>
+            <li>
+              <input type="checkbox" /> Avaliação de envolvimento
+              endoperiodontal
+            </li>
+          </ul>
+
+          <h2>ENDODONTIA</h2>
+          <ul>
+            <li><input type="checkbox" /> Pesquisa de fratura dentária</li>
+            <li><input type="checkbox" /> Pesquisa de perfuração radicular</li>
+          </ul>
+        </td>
+        <td style="width: 25%">
+          <h2>CIRURGIA</h2>
+          <ul>
+            <li><input type="checkbox" /> Dente incluso e/ou supranumerário</li>
+            <li>
+              <input type="checkbox" /> Pesquisa de fratura óssea região:
+              ________________
+            </li>
+            <li>
+              <input type="checkbox" /> Terceiros molares:
+              <ul>
+                <li>
+                  <input type="checkbox" /> Relação com o canal mandibular
+                </li>
+                <li><input type="checkbox" /> Relação com o seio maxilar</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h2>ORTODONTIA / ODONTOPEDIATRIA</h2>
+          <ul>
+            <li><input type="checkbox" /> Avaliação de tábuas ósseas</li>
+            <li>
+              <input type="checkbox" /> Avaliação da intercuspidação dentária
+            </li>
+            <li>
+              <input type="checkbox" /> Medição dos diâmetros mesio-distais de
+              caninos e prémolares
+            </li>
+            <li style="display: flex; flex-direction: column">
+              <h3 style="display: block; margin-top: 20px; margin-bottom: 0px">
+                Marcar regiões especificas no esquema abaixo
+              </h3>
+
+              <img
+                src="images/desenho-esquematico.png"
+                width="100%"
+                style="padding: 12px; border-radius: 8px"
+              />
+            </li>
+          </ul>
+
+          <h2>Formato de entrega do exame:</h2>
+          <ul>
+            <li><input type="checkbox" /> Filme</li>
+            <li><input type="checkbox" /> Papel fotográfico</li>
+            <li><input type="checkbox" /> CD Implant viewer</li>
+          </ul>
+
+          <div style="margin-top: 150px; text-align: center">
+            <hr />
+            <p style="font-weight: bold; margin-top: 10px">
+              Carimbo e assinatura
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tfoot style="background: #eaf6ff">
+        <tr>
+          <td
+            colspan="4"
+            style="border-top: #009ffd 2px solid; padding: 20px 0"
+          >
+            <div style="text-align: center">
+              <p>
+                Horário de atendimento para exames: Segunda a Sexta: 9h às
+                17:45h / Sábado: 9h às 12:45h
+              </p>
+              <p style="font-weight: bold">
+                Aceitamos convênios, consulte-nos.
+              </p>
+            </div>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

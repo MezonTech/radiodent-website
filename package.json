@@ -1,0 +1,28 @@
+{
+  "name": "radiodent-website",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "start-host": "astro dev --host",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "build:prod": "NODE_ENV=production astro build"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/sitemap": "^3.2.1",
+    "@swup/astro": "^1.4.1",
+    "astro": "^5.2.3",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^5.2.10",
+    "astro-robots-txt": "^1.0.0",
+    "sass": "^1.81.0"
+  }
+}
