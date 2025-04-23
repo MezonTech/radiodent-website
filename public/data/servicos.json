@@ -22,12 +22,8 @@
               "descricao": "<p class='mb-0'>Visualiza as áreas entre os dentes posteriores, útil para detectar cáries.</p>"
             },
             {
-              "nome": "Oclusal ortogonal",
+              "nome": "Oclusal ortogonal e oblíqua",
               "descricao": "<p class='mb-0'>Aborda uma visão ampla do arco superior ou inferior.</p>"
-            },
-            {
-              "nome": "Oclusal oblíqua",
-              "descricao": "<p class='mb-0'>Vista inclinada para observar detalhes específicos da boca.</p>"
             }
           ]
         },
@@ -132,11 +128,7 @@
           "titulo": "Extra-orais",
           "opcoes": [
             {
-              "nome": "Frente",
-              "descricao": "<p class='mb-0'>Fotografia da face de frente.</p>"
-            },
-            {
-              "nome": "Perfil",
+              "nome": "Cefalométrica em perfil",
               "descricao": "<p class='mb-0'>Fotografia da face de perfil, útil para análise facial.</p>"
             }
           ]
