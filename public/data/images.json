@@ -1,5 +1,11 @@
 [
   {
+    "src": "/images/convenios/porto-seguro.png",
+    "dir": "convenios",
+    "name": "porto-seguro.png",
+    "type": "image/png"
+  },
+  {
     "src": "/images/convenios/amil-dental.png",
     "dir": "convenios",
     "name": "amil-dental.png",
