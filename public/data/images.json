@@ -202,5 +202,20 @@
     "dir": "convenios",
     "name": "uniodonto.png",
     "type": "image/png"
+  },
+  {
+    "nome": "Mais Dental",
+    "src": "https://via.placeholder.com/96x96/000000/FFFFFF?text=Mais+Dental",
+    "tipo": "image/png"
+  },
+  {
+    "nome": "Hapvida",
+    "src": "https://via.placeholder.com/96x96/000000/FFFFFF?text=Hapvida",
+    "tipo": "image/png"
+  },
+  {
+    "nome": "Odontolife",
+    "src": "https://via.placeholder.com/96x96/000000/FFFFFF?text=Odontolife",
+    "tipo": "image/png"
   }
 ]
