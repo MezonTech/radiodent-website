@@ -1,0 +1,268 @@
+[
+  {
+    "nome": "Amil Dental",
+    "name": "amil-dental.png",
+    "src": "/images/convenios/amil-dental.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Appai",
+    "name": "appai.png",
+    "src": "/images/convenios/appai.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Belo Dente",
+    "name": "belo-dente.png",
+    "src": "/images/convenios/belo-dente.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Bradesco Saúde",
+    "name": "bradesco.png",
+    "src": "/images/convenios/bradesco.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Camed",
+    "name": "camed.png",
+    "src": "/images/convenios/camed.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Cassi",
+    "name": "cassi.png",
+    "src": "/images/convenios/cassi.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Cemeru",
+    "name": "cemeru.png",
+    "src": "/images/convenios/cemeru.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Coopus",
+    "name": "coopus.png",
+    "src": "/images/convenios/coopus.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Embratel",
+    "name": "embratel.png",
+    "src": "/images/convenios/embratel.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Fachesf",
+    "name": "fachesf.png",
+    "src": "/images/convenios/fachesf.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Fundação Assistencial Cespe",
+    "name": "fundacao-cespe.png",
+    "src": "/images/convenios/fundacao-cespe.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Fundação Saúde Itaú",
+    "name": "fundacao-saud-ita.png",
+    "src": "/images/convenios/fundacao-saud-ita.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Gama Saúde",
+    "name": "gama.png",
+    "src": "/images/convenios/gama.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "GNDI",
+    "name": "gndi.png",
+    "src": "/images/convenios/gndi.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Grupo Santa Celina",
+    "name": "grupo-santa-celina.png",
+    "src": "/images/convenios/grupo-santa-celina.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Hapvida",
+    "name": "hapvida.png",
+    "src": "/images/convenios/hapvida.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Lincx",
+    "name": "lincx.png",
+    "src": "/images/convenios/lincx.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Marítima Saúde",
+    "name": "maritima.png",
+    "src": "/images/convenios/maritima.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Medial",
+    "name": "medial.png",
+    "src": "/images/convenios/medial.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Mediservice",
+    "name": "mediservice.png",
+    "src": "/images/convenios/mediservice.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Omint",
+    "name": "omint.png",
+    "src": "/images/convenios/omint.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Petrobras",
+    "name": "petrobras.png",
+    "src": "/images/convenios/petrobras.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Postal Saúde",
+    "name": "postal-saude.png",
+    "src": "/images/convenios/postal-saude.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Porto Seguro",
+    "name": "porto-seguro.png",
+    "src": "/images/convenios/porto-seguro.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Proasa",
+    "name": "proasa.png",
+    "src": "/images/convenios/proasa.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Real Grandeza",
+    "name": "real-grandeza.png",
+    "src": "/images/convenios/real-grandeza.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Samp",
+    "name": "samp.png",
+    "src": "/images/convenios/samp.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Saúde Caixa",
+    "name": "saude-caixa.png",
+    "src": "/images/convenios/saude-caixa.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Saúde Petrobras",
+    "name": "saude-petrobras.png",
+    "src": "/images/convenios/saude-petrobras.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Serpro",
+    "name": "serpro.png",
+    "src": "/images/convenios/serpro.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Smile",
+    "name": "smile.png",
+    "src": "/images/convenios/smile.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Sompo",
+    "name": "sompo.png",
+    "src": "/images/convenios/sompo.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "SulAmérica",
+    "name": "sulamerica.png",
+    "src": "/images/convenios/sulamerica.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Uniodonto",
+    "name": "uniodonto.png",
+    "src": "/images/convenios/uniodonto.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Unimed Fesp",
+    "name": "unimed-fesp.png",
+    "src": "/images/convenios/unimed-fesp.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Unimed Nacional",
+    "name": "unimed-nacional.png",
+    "src": "/images/convenios/unimed-nacional.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Vale",
+    "name": "vale.png",
+    "src": "/images/convenios/vale.png",
+    "dir": "convenios",
+    "type": "image/png"
+  },
+  {
+    "nome": "Viva Saúde",
+    "name": "viva-saude.png",
+    "src": "/images/convenios/viva-saude.png",
+    "dir": "convenios",
+    "type": "image/png"
+  }
+]

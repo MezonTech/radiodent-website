@@ -18,21 +18,21 @@
     "type": "image/png"
   },
   {
+    "src": "/images/convenios/belo-dente.png",
+    "dir": "convenios",
+    "name": "belo-dente.png",
+    "type": "image/png"
+  },
+  {
     "src": "/images/convenios/bradesco.png",
     "dir": "convenios",
     "name": "bradesco.png",
     "type": "image/png"
   },
   {
-    "src": "/images/convenios/leve-saude.png",
+    "src": "/images/convenios/camed.png",
     "dir": "convenios",
-    "name": "leve-saude.png",
-    "type": "image/png"
-  },
-  {
-    "src": "/images/convenios/ideal-odonto.png",
-    "dir": "convenios",
-    "name": "ideal-odonto.png",
+    "name": "camed.png",
     "type": "image/png"
   },
   {
@@ -42,9 +42,9 @@
     "type": "image/png"
   },
   {
-    "src": "/images/convenios/care.png",
+    "src": "/images/convenios/care-plus.png",
     "dir": "convenios",
-    "name": "care.png",
+    "name": "care-plus.png",
     "type": "image/png"
   },
   {
@@ -54,9 +54,15 @@
     "type": "image/png"
   },
   {
-    "src": "/images/convenios/aesp.png",
+    "src": "/images/convenios/dental-plan.png",
     "dir": "convenios",
-    "name": "aesp.png",
+    "name": "dental-plan.png",
+    "type": "image/png"
+  },
+  {
+    "src": "/images/convenios/dentalprev.png",
+    "dir": "convenios",
+    "name": "dentalprev.png",
     "type": "image/png"
   },
   {
@@ -78,9 +84,9 @@
     "type": "image/png"
   },
   {
-    "src": "/images/convenios/plenodonto.png",
+    "src": "/images/convenios/elo.png",
     "dir": "convenios",
-    "name": "plenodonto.png",
+    "name": "elo.png",
     "type": "image/png"
   },
   {
@@ -90,15 +96,21 @@
     "type": "image/png"
   },
   {
+    "src": "/images/convenios/hapvida.png",
+    "dir": "convenios",
+    "name": "hapvida.png",
+    "type": "image/png"
+  },
+  {
     "src": "/images/convenios/inpao.png",
     "dir": "convenios",
     "name": "inpao.png",
     "type": "image/png"
   },
   {
-    "src": "/images/convenios/novo-dente.png",
+    "src": "/images/convenios/interlife.png",
     "dir": "convenios",
-    "name": "novo-dente.png",
+    "name": "interlife.png",
     "type": "image/png"
   },
   {
@@ -108,15 +120,15 @@
     "type": "image/png"
   },
   {
-    "src": "/images/convenios/dentaluni.png",
+    "src": "/images/convenios/irb.png",
     "dir": "convenios",
-    "name": "dentaluni.png",
+    "name": "irb.png",
     "type": "image/png"
   },
   {
-    "src": "/images/convenios/isodonti.png",
+    "src": "/images/convenios/isodonto.png",
     "dir": "convenios",
-    "name": "isodonti.png",
+    "name": "isodonto.png",
     "type": "image/png"
   },
   {
@@ -126,15 +138,21 @@
     "type": "image/jpeg"
   },
   {
+    "src": "/images/convenios/mais-dental.png",
+    "dir": "convenios",
+    "name": "mais-dental.png",
+    "type": "image/png"
+  },
+  {
     "src": "/images/convenios/medi-service.png",
     "dir": "convenios",
     "name": "medi-service.png",
     "type": "image/png"
   },
   {
-    "src": "/images/convenios/odontogroup.png",
+    "src": "/images/convenios/medial_odonto.png",
     "dir": "convenios",
-    "name": "odontogroup.png",
+    "name": "medial_odonto.png",
     "type": "image/png"
   },
   {
@@ -156,6 +174,12 @@
     "type": "image/png"
   },
   {
+    "src": "/images/convenios/odontolife.png",
+    "dir": "convenios",
+    "name": "odontolife.png",
+    "type": "image/png"
+  },
+  {
     "src": "/images/convenios/odontoprev.png",
     "dir": "convenios",
     "name": "odontoprev.png",
@@ -168,15 +192,21 @@
     "type": "image/png"
   },
   {
-    "src": "/images/convenios/rede-brazil-dental.png",
+    "src": "/images/convenios/prodent.png",
     "dir": "convenios",
-    "name": "rede-brazil-dental.png",
+    "name": "prodent.png",
     "type": "image/png"
   },
   {
-    "src": "/images/convenios/unimed-odonto.png",
+    "src": "/images/convenios/redeunna.png",
     "dir": "convenios",
-    "name": "unimed-odonto.png",
+    "name": "redeunna.png",
+    "type": "image/png"
+  },
+  {
+    "src": "/images/convenios/semeg-dental.png",
+    "dir": "convenios",
+    "name": "semeg-dental.png",
     "type": "image/png"
   },
   {
@@ -186,9 +216,15 @@
     "type": "image/png"
   },
   {
-    "src": "/images/convenios/assist.png",
+    "src": "/images/convenios/sepaoassist.png",
     "dir": "convenios",
-    "name": "assist.png",
+    "name": "sepaoassist.png",
+    "type": "image/png"
+  },
+  {
+    "src": "/images/convenios/sorriso.png",
+    "dir": "convenios",
+    "name": "sorriso.png",
     "type": "image/png"
   },
   {
@@ -202,20 +238,5 @@
     "dir": "convenios",
     "name": "uniodonto.png",
     "type": "image/png"
-  },
-  {
-    "nome": "Mais Dental",
-    "src": "https://via.placeholder.com/96x96/000000/FFFFFF?text=Mais+Dental",
-    "tipo": "image/png"
-  },
-  {
-    "nome": "Hapvida",
-    "src": "https://via.placeholder.com/96x96/000000/FFFFFF?text=Hapvida",
-    "tipo": "image/png"
-  },
-  {
-    "nome": "Odontolife",
-    "src": "https://via.placeholder.com/96x96/000000/FFFFFF?text=Odontolife",
-    "tipo": "image/png"
   }
 ]
